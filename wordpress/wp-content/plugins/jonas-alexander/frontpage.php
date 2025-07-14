@@ -239,7 +239,7 @@
                 </div>
                 <div class=" projects-group-item slide-fade-wrapper left">
                     <img class="parallax-image" alt="CRM system for a IOT-company"
-                        src="/wp-content/uploads/references/safelii-crm.png" />
+                        src="/wp-content/uploads/references/safelii-crm.jpg" />
                     <div class="projects-group-item-description">
                         <h4 class="projects-group-item-title">
                             <a href="/base2sale-crm-system" target="_blank">
@@ -272,7 +272,7 @@
                 </div>
                 <div class="projects-group-item slide-fade-wrapper left">
                     <img class="parallax-image" alt="SEObetter - Website Analytics & SEO Optimization Platform"
-                        src="/wp-content/uploads/references/seobetter.png" />
+                        src="/wp-content/uploads/references/seobetter.jpg" />
                     <div class="projects-group-item-description">
                         <h4 class="projects-group-item-title">
                             <a href="/seobetter-website-analytics-seo-optimization" target="_blank">
@@ -333,7 +333,7 @@
                 </div>
                 <div class="projects-group-item slide-fade-wrapper right">
                     <img class="parallax-image" alt="IOT App"
-                        src="/wp-content/uploads/references/safelii-app-2.png" />
+                        src="/wp-content/uploads/references/safelii-app-2.jpg" />
                     <div class="projects-group-item-description">
                         <h4 class="projects-group-item-title">
                             <a href="/iot-sos-app" target="_blank">
@@ -428,7 +428,7 @@
                 </div>
                 <div class="projects-group-item slide-fade-wrapper left">
                     <img class="parallax-image" alt="Happy with my bike - Responsive WC webshop"
-                        src="/wp-content/uploads/references/happy-0.png" />
+                        src="/wp-content/uploads/references/happy-0.jpg" />
                     <div class="projects-group-item-description">
                         <h4 class="projects-group-item-title">
                             <a href="/happy-with-my-bike" target="_blank">

@@ -1,6 +1,6 @@
 <div class="project-wrapper">
     <img alt="Funler Messaging Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/funler-messaging-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/funler-messaging-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

@@ -41,7 +41,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="IOT SOS APP Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/iot-sos-app-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/iot-sos-app-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

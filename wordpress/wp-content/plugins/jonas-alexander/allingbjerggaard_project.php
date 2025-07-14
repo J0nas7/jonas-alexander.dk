@@ -1,13 +1,13 @@
 <?php
 $galleryImages = [
-    "Dashboard Overview" => "1.png",
+    "Dashboard Overview" => "1.jpg",
     "Project Timeline" => "2.jpg",
     "Task Creation" => "3.jpg",
     "Task Assignment" => "4.jpg",
     "Time Tracking" => "5.jpg",
     "Daily Timesheet" => "6.jpg",
-    "Weekly Timesheet" => "7.png",
-    "Monthly Timesheet" => "8.png",
+    "Weekly Timesheet" => "7.jpg",
+    "Monthly Timesheet" => "8.jpg",
     "Video" => "9.mp4",
 ];
 $galleryAlbums = [
@@ -38,7 +38,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="Allingbjerggaard Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/allingbjerggaard-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/allingbjerggaard-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

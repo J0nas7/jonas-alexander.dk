@@ -31,7 +31,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="SEObetter Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/seobetter-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/seobetter-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

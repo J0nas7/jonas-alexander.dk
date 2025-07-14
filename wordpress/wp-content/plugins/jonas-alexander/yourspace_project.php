@@ -56,7 +56,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="YourSpace Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/yourspace-slack-discord-clone-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/yourspace-slack-discord-clone-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

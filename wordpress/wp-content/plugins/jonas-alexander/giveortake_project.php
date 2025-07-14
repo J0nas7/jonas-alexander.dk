@@ -61,7 +61,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="GiveOrTake Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/giveortake-project-time-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/giveortake-project-time-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

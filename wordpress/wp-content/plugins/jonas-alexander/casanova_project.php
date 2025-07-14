@@ -1,33 +1,33 @@
 <?php
 $galleryImagesWeb = [
-    "Showcase" => "1.png",
-    "Frontpage" => "2.png",
-    "Frontpage - 2" => "3.png",
-    "Search List" => "4.png",
-    "Search Map" => "5.png",
-    "Search Map with Marker" => "6.png",
-    "Listing Detail" => "7.png",
-    "Image Rotation" => "8.png",
-    "Subscribe CTA" => "9.png",
-    "Send Message to Landlord" => "10.png",
-    "Chatting with Landlord" => "11.png"
+    "Showcase" => "1.jpg",
+    "Frontpage" => "2.jpg",
+    "Frontpage - 2" => "3.jpg",
+    "Search List" => "4.jpg",
+    "Search Map" => "5.jpg",
+    "Search Map with Marker" => "6.jpg",
+    "Listing Detail" => "7.jpg",
+    "Image Rotation" => "8.jpg",
+    "Subscribe CTA" => "9.jpg",
+    "Send Message to Landlord" => "10.jpg",
+    "Chatting with Landlord" => "11.jpg"
 ];
 $galleryImagesApp = [
-    "Frontpage" => "1.png",
-    "Frontpage - 2" => "2.png",
-    "Frontpage - 3" => "3.png",
-    "Frontpage - 4" => "4.png",
-    "App Menu" => "5.png",
-    "Search for Properties" => "6.png",
-    "Search List" => "7.png",
-    "Search Map" => "8.png",
-    "Search Filter" => "9.png",
-    "Search Map with Marker" => "10.png",
-    "Listing Detail" => "11.png",
-    "Listing Detail - 2" => "12.png",
-    "Chatting with Landlord" => "13.png",
-    "Messages Overview" => "14.png",
-    "Image Rotation" => "15.png"
+    "Frontpage" => "1.jpg",
+    "Frontpage - 2" => "2.jpg",
+    "Frontpage - 3" => "3.jpg",
+    "Frontpage - 4" => "4.jpg",
+    "App Menu" => "5.jpg",
+    "Search for Properties" => "6.jpg",
+    "Search List" => "7.jpg",
+    "Search Map" => "8.jpg",
+    "Search Filter" => "9.jpg",
+    "Search Map with Marker" => "10.jpg",
+    "Listing Detail" => "11.jpg",
+    "Listing Detail - 2" => "12.jpg",
+    "Chatting with Landlord" => "13.jpg",
+    "Messages Overview" => "14.jpg",
+    "Image Rotation" => "15.jpg"
 ];
 $galleryAlbums = [
     "Web" => $galleryImagesWeb,
@@ -58,7 +58,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="CasaNova Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/casanova-property-listing-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/casanova-property-listing-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">

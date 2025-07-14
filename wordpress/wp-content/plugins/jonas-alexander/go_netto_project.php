@@ -33,7 +33,7 @@ $galleryAlbums = [
     </div>
 
     <img alt="Go@Netto Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/gonetto-showcase-jumbotron.png" />
+        src="/wp-content/uploads/references/gonetto-showcase-jumbotron.jpg" />
 
     <div class="project-body">
         <div class="project-container">
