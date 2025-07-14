@@ -1,9 +1,9 @@
 <?php
 $galleryImages = [
-    "Dashboard Overview" => "1.png",
-    "Project Timeline" => "2.png",
-    "Task Creation" => "3.png",
-    "Task Assignment" => "4.png"
+    "Dashboard Overview" => "1.jpg",
+    "Project Timeline" => "2.jpg",
+    "Task Creation" => "3.jpg",
+    "Task Assignment" => "4.jpg"
 ];
 $galleryAlbums = [
     "" => $galleryImages

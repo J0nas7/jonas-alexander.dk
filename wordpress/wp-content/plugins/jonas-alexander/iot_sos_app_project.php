@@ -1,6 +1,6 @@
 <?php
 $galleryImages = [
-    "Showcase" => "1.png"
+    "Showcase" => "1.jpg",
 ];
 $galleryVideos = [
     "Fra REMA til Sorgenfri" => "1IlsvnGlUHUAhCVWpjWRnAPzjWC8AFWUG",

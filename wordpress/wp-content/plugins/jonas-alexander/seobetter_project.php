@@ -1,7 +1,7 @@
 <?php
 $galleryImages = [
-    "Showcase" => "1.png",
-    "Demo" => "2.png"
+    "Showcase" => "1.jpg",
+    "Demo" => "2.jpg"
 ];
 $galleryAlbums = [
     "" => $galleryImages
