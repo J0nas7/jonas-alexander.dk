@@ -1,0 +1,31 @@
+runtime: php83
+env: standard
+
+instance_class: F1 # Smallest, cheapest instance
+entrypoint: serve wordpress/router.php
+
+automatic_scaling:
+  min_instances: 0  # Scale down to zero when idle (saves cost)
+  max_instances: 1  # Limit to 1 instance to prevent high costs
+  target_cpu_utilization: 0.65  # Prevents unnecessary scaling
+  target_throughput_utilization: 0.75 # Prevents unnecessary scaling
+
+handlers:
+  # Serve uploads from wp-content/uploads
+  - url: /wp-content/uploads
+    static_dir: wordpress/wp-content/uploads
+
+  # Serve static assets (CSS, JS, images, etc.)
+  - url: /(.*\.(css|js))$
+    static_files: wordpress/\1
+    upload: wordpress/.*\.(css|js)$
+
+  # Redirect all other requests to WordPress
+  - url: /.*
+    secure: always
+    script: auto
+
+runtime_config:
+    operating_system: "ubuntu22"
+    runtime_version: "8.3"
+    document_root: wordpress

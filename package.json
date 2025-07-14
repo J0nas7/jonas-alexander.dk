@@ -1,0 +1,12 @@
+{
+    "name": "wordpress-portfolio",
+    "version": "1.0.0",
+    "description": "Jonas-Alexander portfolio",
+    "main": "wordpress/index.php",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "deploy": "gcloud config set project jonas-alexander-dk && gcloud app deploy app.yaml --version=0-1-0 --quiet"
+    },
+    "author": "J0nas7",
+    "license": "ISC"
+  }
