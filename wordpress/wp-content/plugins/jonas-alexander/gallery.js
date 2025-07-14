@@ -3,7 +3,13 @@ let currentGallery = 'Web'; // Default gallery
 let currentProject = 'Jonas-Alexander'; // Default project
 
 function initializeGalleryFromPHP(galleryData) {
-    galleryAlbums = galleryData;
+    // Process the gallery data to extract only the images
+    galleryAlbums = {};
+    for (let album in galleryData) {
+        if (galleryData.hasOwnProperty(album)) {
+            galleryAlbums[album] = galleryData[album].Images;
+        }
+    }
 }
 
 function openLightBox(image, gallery, project) {

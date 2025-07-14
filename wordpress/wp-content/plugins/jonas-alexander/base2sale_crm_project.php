@@ -68,133 +68,59 @@ $galleryImagesBlade = [
     "Time Logs" => "22.jpg",
     "Attendance Tracking" => "23.jpg"
 ];
+
 $galleryAlbums = [
-    "Nextjs" => $galleryImagesNext,
-    "Blade" => $galleryImagesBlade
+    "Nextjs" => [
+        "Description" => "Galleries: Logo has been removed because I don't own the solution.<br />This album shows the modernized Next.js frontend.",
+        "Images" => $galleryImagesNext
+    ],
+    "Blade" => [
+        "Description" => "Galleries: Logo has been removed because I don't own the solution.<br />This album shows the outdated Laravel Blade frontend.",
+        "Images" => $galleryImagesBlade
+    ]
 ];
-?>
-<script src="<?= plugin_dir_url(__FILE__) . 'gallery.js'; ?>" type="text/javascript"></script>
-<script>
-    // Initialize the gallery albums from PHP
-    initializeGalleryFromPHP(<?php echo json_encode($galleryAlbums); ?>);
-</script>
-<div class="project-wrapper">
-    <div class="gallery-lightbox hidden">
-        <p>Navigate with left/right arrow and close with ESC</p>
-        <div class="gallery-image-container">
-            <video controls class="hidden">
-                <source src="#" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <img alt="Project Image" src="#" />
-            <div class="gallery-image-buttons">
-                <button class="gallery-button previous" onclick="openPreviousImage()">Previous</button>
-                <button class="gallery-button next" onclick="openNextImage()">Next</button>
-            </div>
-        </div>
-        <p class="gallery-image-caption"></p>
-        <p>Image nr. <span class="gallery-image-index"></span> out of <span class="gallery-image-total">0</span></p>
-    </div>
 
-    <img alt="Base2Sale CRM system Jumbotron Image" class="project-jumbotron"
-        src="/wp-content/uploads/references/base2sale-crm-showcase-jumbotron.jpg" />
+$albumsShowCaption = false;
 
-    <div class="project-body">
-        <div class="project-container">
-            <div class="project-content">
-                <header class="project-header">
-                    <h1 class="project-title">Base2Sale CRM system</h1>
-                    <p class="project-subtitle">Modernization and feature expansion of a legacy Laravel CRM for sales teams</p>
-                </header>
+$projectTitle = "Base2Sale CRM system";
+$projectSubtitle = "Modernization and feature expansion of a legacy Laravel CRM for sales teams.";
+$jumbotronImageSrc = "/wp-content/uploads/references/base2sale-crm-showcase-jumbotron.jpg";
 
-                <div class="project-details">
-                    <div class="project-description">
-                        <h2>About Base2Sale CRM system</h2>
-                        <p>
-                            I was tasked with modernizing an old Laravel program, upgrading it from PHP 5 to PHP 8 and expanding it with new features.
-                        </p>
-                        <p>
-                            New features included a calendar for key account managers to manage appointments, a dashboard overview with key sales metrics, and a detailed customer view. The customer view provided info, purchase history, and an advanced subview combining a floorplan builder and webshop, supporting complex drag-and-drop for both equipment and products.
-                        </p>
-                        <p>
-                            I also decoupled the frontend from Laravel’s Blade templates, building a new reactive frontend in Next.js for a more modern user experience.
-                        </p>
-                    </div>
+$projectDescription = "
+    <p>I was tasked with modernizing an old Laravel program, upgrading it from PHP 5 to PHP 8 and expanding it with new features.</p>
+    <p>New features included a calendar for key account managers to manage appointments, a dashboard overview with key sales metrics, and a detailed customer view. The customer view provided info, purchase history, and an advanced subview combining a floorplan builder and webshop, supporting complex drag-and-drop for both equipment and products.</p>
+    <p>I also decoupled the frontend from Laravel’s Blade templates, building a new reactive frontend in Next.js for a more modern user experience.</p>
+";
 
-                    <div class="project-features">
-                        <h2>Key Features</h2>
-                        <ul>
-                            <li>Upgrade from PHP 5 to PHP 8 and Laravel modernization</li>
-                            <li>Calendar for key account managers to manage appointments</li>
-                            <li>Dashboard with sales metrics: total sales, confirmed orders, growth, returning customers, abandoned purchases, top 10 customers, sales by category/city/customer type, monthly sales</li>
-                            <li>Detailed customer view with info, purchase history, and advanced subview</li>
-                            <li>Floorplan builder and webshop with drag-and-drop for equipment and products</li>
-                            <li>Frontend decoupled from Blade, rebuilt in Next.js for a modern UX</li>
-                        </ul>
-                    </div>
+$keyFeatures = [
+    "Upgrade from PHP 5 to PHP 8 and Laravel modernization",
+    "Calendar for key account managers to manage appointments",
+    "Dashboard with sales metrics: total sales, confirmed orders, growth, returning customers, abandoned purchases, top 10 customers, sales by category/city/customer type, monthly sales",
+    "Detailed customer view with info, purchase history, and advanced subview",
+    "Floorplan builder and webshop with drag-and-drop for equipment and products",
+    "Frontend decoupled from Blade, rebuilt in Next.js for a modern UX"
+];
 
-                    <div class="project-gallery-wrapper">
-                        <?php foreach ($galleryAlbums as $albumName => $images): ?>
-                            <h2>Gallery: <?= $albumName; ?></h2>
-                            <p style="color: darkgrey;">
-                                Galleries: Logo has been removed because I don't own the solution.<br />
-                                <?php
-                                if ($albumName === "Nextjs") {
-                                    echo "This album shows the modernized Next.js frontend.";
-                                } elseif ($albumName === "Blade") {
-                                    echo "This album shows the outdated Laravel Blade frontend.";
-                                }
-                                ?>
-                            </p>
-                            <div class="project-gallery">
-                                <?php foreach ($images as $caption => $image): ?>
-                                    <p class="gallery-item">
-                                        <img src="/wp-content/uploads/references/gallery/base2sale-<?= strtolower($albumName); ?>/<?= $image; ?>"
-                                            alt="Project Image <?= $image ?>" class="gallery-image"
-                                            onclick="openLightBox('<?= $image ?>', '<?= $albumName ?>', 'base2sale')" />
-                                        <span></span>
-                                    </p>
-                                <?php endforeach; ?>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
+$technicalApproach = [
+    "The modernization of the Base2Sale CRM system involved a comprehensive upgrade from PHP 5 to PHP 8, significantly enhancing performance, security, and compatibility with modern web technologies. This upgrade was crucial for leveraging the latest features of the Laravel framework.",
+    "I rebuilt the frontend using Next.js, a React-based framework, to create a more dynamic and responsive user interface. This transition enabled faster page loads and interactive elements, utilizing React.js and Redux for efficient state management.",
+    "The backend was restructured using Laravel, taking advantage of Eloquent ORM for streamlined data handling. Laravel migrations enabled smooth database updates and schema management.",
+    "The CRM used MySQL hosted on One.com for scalable and reliable data storage.",
+    "New features integrated into the system included a dashboard with detailed sales metrics, a robust calendar system for account managers, and a complex drag-and-drop floorplan builder integrated into a customer view and webshop.",
+    "Testing was handled via Jest and PHPUnit, while CI/CD pipelines were implemented using GitHub Actions. Hosting was managed via Google Cloud for high availability and performance."
+];
 
-                    <div class="technical-approach">
-                        <h2>Technical Approach</h2>
-                        <p>
-                            The modernization of the Base2Sale CRM system involved a comprehensive upgrade from PHP 5 to PHP 8, significantly enhancing performance, security, and compatibility with modern web technologies. This upgrade was crucial for leveraging the latest features of the Laravel framework, ensuring the system could handle increased loads and provide a more robust backend infrastructure.
-                        </p>
-                        <p>
-                            A key aspect of the modernization was decoupling the frontend from Laravel's Blade templates. I rebuilt the frontend using Next.js, a React-based framework, to create a more dynamic and responsive user interface. This transition allowed for improved user experiences through faster page loads and more interactive elements, utilizing React.js and Redux for efficient state management.
-                        </p>
-                        <p>
-                            The backend was restructured using Laravel, taking advantage of its powerful features like Eloquent ORM for database interactions, which streamlined data handling and improved system performance. The use of Laravel migrations facilitated seamless database updates and schema management, ensuring consistency across different environments.
-                        </p>
-                        <p>
-                            For the database, MySQL hosted on One.com was used, providing a reliable and scalable solution to support the CRM's data-intensive operations. This setup ensured that the system could efficiently manage large volumes of data and user interactions.
-                        </p>
-                        <p>
-                            New features were integrated into the CRM, including a more organized and easy to use calendar system for key account managers to manage appointments efficiently. A detailed dashboard was developed to provide an overview of key sales metrics, such as total sales, confirmed orders, sales growth, returning customers, abandoned purchases, top 10 customers, sales by category/city/customer type, monthly sales, and customer insights, enabling better decision-making and strategic planning. Additionally, a detailed customer view was implemented, offering information, purchase history, and an advanced subview combining a floorplan builder and webshop with complex drag-and-drop functionalities for both equipment and products.
-                        </p>
-                        <p>
-                            DevOps practices were integral to the project, with Jest and PHPUnit used for thorough testing to ensure code quality and system reliability. Continuous integration and deployment pipelines were managed through GitHub Actions, facilitating automated testing and deployment processes. The application was hosted on Google Cloud, ensuring high availability and performance.
-                        </p>
-                        <div class="tech-stack">
-                            <h3>Tech Stack</h3>
-                            <ul>
-                                <li>Frontend: Next.js, React.js, Redux, TypeScript, MUI, SCSS</li>
-                                <li>Backend: PHP, Laravel, Eloquent</li>
-                                <li>Database: MySQL hosted on One.com</li>
-                                <li>DevOps: Jest, PHPUnit, GitHub Actions, Google Cloud</li>
-                            </ul>
-                        </div>
-                    </div>
+$techStack = [
+    "Frontend: Next.js, React.js, Redux, TypeScript, MUI, SCSS",
+    "Backend: PHP, Laravel, Eloquent",
+    "Database: MySQL hosted on One.com",
+    "DevOps: Jest, PHPUnit, GitHub Actions, Google Cloud"
+];
 
-                    <div class="code-and-demo">
-                        <h2>GitHub repositories & Online Demo</h2>
-                        <p>Not available, since I don't own the solution.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+$demoUrl = null;
+$demoUsername = null;
+$demoPassword = null;
+
+$githubRepositories = []; // Not publicly available
+
+require_once __DIR__ . '/project_template.php';
