@@ -9,13 +9,17 @@ $folderName = str_replace('@', '', $folderName);
 </script>
 <div class="project-wrapper">
     <div class="gallery-lightbox hidden">
-        <p>Navigate with left/right arrow and close with ESC</p>
+        <div class="gallery-close-button">
+            <button onclick="closeLightBox()">&times;</button>
+        </div>
         <div class="gallery-image-container">
             <video controls class="hidden">
                 <source src="#" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <img alt="Project Image" src="#" />
+            <img decoding="async" loading="lazy"
+                alt="Project Image"
+                src="#" />
             <div class="gallery-image-buttons">
                 <button class="gallery-button previous" onclick="openPreviousImage()">Previous</button>
                 <button class="gallery-button next" onclick="openNextImage()">Next</button>
@@ -25,33 +29,34 @@ $folderName = str_replace('@', '', $folderName);
         <p>Image nr. <span class="gallery-image-index"></span> out of <span class="gallery-image-total">0</span></p>
     </div>
 
-    <img alt="<?= $projectTitle; ?> Jumbotron Image" class="project-jumbotron"
+    <img decoding="async" loading="lazy" class="project-jumbotron"
+        alt="<?= $projectTitle; ?> Jumbotron Image"
         src="<?= $jumbotronImageSrc; ?>" />
 
-    <div class="project-body">
+    <main class="project-body">
         <div class="project-container">
-            <div class="project-content">
+            <article class="project-content">
                 <header class="project-header">
                     <h1 class="project-title"><?= $projectTitle; ?></h1>
                     <p class="project-subtitle"><?= $projectSubtitle; ?></p>
                 </header>
 
                 <div class="project-details">
-                    <div class="project-description">
+                    <section class="project-description">
                         <h2>About <?= $projectTitle; ?></h2>
                         <?= $projectDescription; ?>
-                    </div>
+                    </section>
 
-                    <div class="project-features">
+                    <section class="project-features">
                         <h2>Key Features</h2>
                         <ul>
                             <?php foreach ($keyFeatures as $feature): ?>
                                 <li><?= $feature; ?></li>
                             <?php endforeach; ?>
                         </ul>
-                    </div>
+                    </section>
 
-                    <div class="project-gallery-wrapper">
+                    <section class="project-gallery-wrapper">
                         <?php foreach ($galleryAlbums as $albumName => $album): ?>
                             <h2>Gallery: <?= $albumName; ?></h2>
                             <?php if (!empty($album["Description"])): ?>
@@ -61,26 +66,42 @@ $folderName = str_replace('@', '', $folderName);
                                 <?php foreach ($album["Images"] as $caption => $image): ?>
                                     <p class="gallery-item">
                                         <?php if (strpos($image, '.mp4') || strpos($image, '.mov') || strlen($image) > 6) : ?>
-                                            <img src="https://placehold.co/600x400?text=Video"
-                                                alt="Project Video <?= $image ?>" class="gallery-image"
-                                                onclick="openLightBox('<?= $image ?>', '<?= $albumName ?>', '<?= $folderName ?>')" />
+                                            <?php if (strlen($image) > 6) : ?>
+                                                <a href="https://drive.google.com/file/d/<?= $image; ?>/view" target="_blank">
+                                                    <img decoding="async" loading="lazy" class="gallery-image"
+                                                        alt="Project Video <?= $image ?>"
+                                                        src="https://placehold.co/600x400?text=Video" />
+                                                </a>
+                                            <?php else: ?>
+                                                <button onclick="
+                                                    openLightBox('<?= $image ?>', '<?= $albumName ?>', '<?= $folderName ?>');
+                                                    document.querySelector('.gallery-button.next').focus();
+                                                ">
+                                                    <img decoding="async" loading="lazy" class="gallery-image"
+                                                        alt="Project Video <?= $image ?>"
+                                                        src="https://placehold.co/600x400?text=Video" />
+                                                </button>
+                                            <?php endif; ?>
                                         <?php else: ?>
-                                            <img src="/wp-content/uploads/references/gallery/<?= $folderName ?>-<?= strtolower($albumName); ?>/<?= $image; ?>"
-                                                alt="Project Image <?= $image ?>" class="gallery-image"
-                                                onclick="openLightBox('<?= $image ?>', '<?= $albumName ?>', '<?= $folderName ?>')" />
+                                            <button onclick="
+                                                openLightBox('<?= $image ?>', '<?= $albumName ?>', '<?= $folderName ?>');
+                                                document.querySelector('.gallery-button.next').focus();
+                                            ">
+                                                <img decoding="async" loading="lazy"
+                                                    alt="Project Image <?= $image ?>" class="gallery-image"
+                                                    src="/wp-content/uploads/references/gallery/<?= $folderName ?>-<?= strtolower($albumName); ?>/<?= $image; ?>" />
+                                            </button>
                                         <?php endif; ?>
                                         <span><?= ($albumsShowCaption ? $caption : ""); ?></span>
                                     </p>
                                 <?php endforeach; ?>
                             </div>
                         <?php endforeach; ?>
-                    </div>
+                    </section>
 
-                    <div class="technical-approach">
+                    <section class="technical-approach">
                         <h2>Technical Approach</h2>
-                        <?php foreach ($technicalApproach as $paragraph): ?>
-                            <p><?= $paragraph; ?></p>
-                        <?php endforeach; ?>
+                        <?= $technicalApproach ?>
                         <div class="tech-stack">
                             <h3>Tech Stack</h3>
                             <ul>
@@ -89,13 +110,13 @@ $folderName = str_replace('@', '', $folderName);
                                 <?php endforeach; ?>
                             </ul>
                         </div>
-                    </div>
+                    </section>
 
                     <?php if (!empty($demoUrl) || count($githubRepositories)) : ?>
-                        <div class="code-and-demo">
+                        <section class="code-and-demo">
                             <h2>GitHub repositories & Online Demo</h2>
                             <?php if (!empty($demoUrl)) : ?>
-                                <p>For a live demo, you can visit the <a href="<?= $demoUrl; ?>" target="_blank"><?= $projectTitle; ?> demo site</a>.</p>
+                                <p>For a live demo, you can <a href="<?= $demoUrl; ?>" target="_blank" aria-label="Visit the <?= $projectTitle; ?> demo site">Visit the <?= $projectTitle; ?> demo site</a>.</p>
                                 <p>Login details:</p>
                                 <ul>
                                     <li><strong>Email:</strong> <code><?= $demoUsername; ?></code></li>
@@ -105,19 +126,19 @@ $folderName = str_replace('@', '', $folderName);
                             <?php if (count($githubRepositories)) : ?>
                                 <p>Below are GitHub repositories.</p>
                                 <ul>
-                                    <?php foreach ($githubRepositories as $name => $url): ?>
+                                    <?php foreach ($githubRepositories as $id => $value): ?>
                                         <li>
-                                            <a href="<?= $url; ?>" target="_blank">
-                                                <strong><?= $name; ?></strong>
+                                            <a href="<?= $value; ?>" target="_blank">
+                                                <strong><?= substr($value, strrpos($value, '/') + 1); ?></strong>
                                             </a>
                                         </li>
                                     <?php endforeach; ?>
                                 </ul>
                             <?php endif; ?>
-                        </div>
+                        </section>
                     <?php endif; ?>
                 </div>
-            </div>
+            </article>
         </div>
-    </div>
+    </main>
 </div>

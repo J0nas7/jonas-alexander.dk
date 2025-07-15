@@ -38,7 +38,26 @@ function render_jonasalexander_template($filename)
 
     $filepath = plugin_dir_path(__FILE__) . $filename;
     if (file_exists($filepath)) {
+        $albumsShowCaption = get_field('albumsShowCaption', false, false);
+        $projectTitle = get_field('projectTitle', false, false);
+        $projectSubtitle = get_field('projectSubtitle', false, false);
+        $jumbotronImageSrc = get_field('jumbotronImageSrc', false, false);
+        $projectDescription = get_field('projectDescription', false, false);
+        $keyFeatures = get_field('keyFeatures', false, false);
+        $keyFeatures = explode("////", $keyFeatures);
+        $technicalApproach = get_field('technicalApproach', false, false);
+        $techStack = get_field('techStack', false, false);
+        $techStack = explode("////", $techStack);
+        $demoUrl = get_field('demoUrl', false, false);
+        $demoUsername = get_field('demoUsername', false, false);
+        $demoPassword = get_field('demoPassword', false, false);
+        $githubRepositories = get_field('githubRepositories', false, false);
+
         include $filepath;
+
+        if ($filename !== 'frontpage.php') {
+            require_once __DIR__ . '/project_template.php';
+        }
     } else {
         echo "Template file not found: " . esc_html($filename);
     }

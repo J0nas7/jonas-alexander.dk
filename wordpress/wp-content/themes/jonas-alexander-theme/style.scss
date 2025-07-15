@@ -1034,6 +1034,25 @@ table {
             display: none;
         }
 
+        .gallery-close-button {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 2rem;
+                cursor: pointer;
+                padding: 10px;
+
+                &:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+
         .gallery-image-container {
             position: relative;
             width: 100%;
