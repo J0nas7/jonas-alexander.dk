@@ -202,9 +202,9 @@ $gap: 20px;
             position: relative;
             cursor: pointer;
 
-            @media (min-width: 1040px) {
-                display: none;
-            }
+            // @media (min-width: 1040px) {
+            //     display: none;
+            // }
         }
 
         .page-navigator {
@@ -224,10 +224,16 @@ $gap: 20px;
                 display: none;
                 flex-direction: column;
                 gap: 8px;
+                background-color: rgba(0, 0, 0, 0.4);
 
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.1);
+                @media (min-width: 576px) {
+                    background-color: transparent;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
                 }
+
 
                 @media (min-width: 1040px) {
                     margin-left: 50px;
@@ -277,13 +283,17 @@ $gap: 20px;
 
                     a,
                     strong {
-                        color: var(--blueText);
+                        color: white;
+
+                        @media (min-width: 576px) {
+                            color: var(--blueText);
+                        }
                     }
                 }
             }
 
             #navigator-toggle {
-                display: none;
+                // display: none;
 
                 &:checked+ul {
                     display: flex;

@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleBtn.addEventListener('click', function () {
             const expanded = this.getAttribute('aria-expanded') === 'true';
             this.setAttribute('aria-expanded', !expanded);
-            navMenu.style.display = expanded ? 'none' : 'block';
-            toggleBtn.style.display = expanded ? 'block' : 'none';
+            navMenu.style.display = expanded ? 'none' : 'flex';
+            // toggleBtn.style.display = expanded ? 'block' : 'none';
 
             const checkbox = document.getElementById('navigator-toggle');
             checkbox.checked = !checkbox.checked;
