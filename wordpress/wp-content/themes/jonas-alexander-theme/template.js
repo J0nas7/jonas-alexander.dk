@@ -328,3 +328,59 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(checkPositions);
 });
 
+// Navigation hovering floating rotating items
+document.addEventListener('DOMContentLoaded', function () {
+    const leftItems = document.querySelectorAll('.navigation-hovering-item.left');
+    const rightItems = document.querySelectorAll('.navigation-hovering-item.right');
+
+    // Animation parameters (can tweak)
+    const driftAmplitudeX = 5;   // px horizontal drift
+    const floatAmplitudeY = 10;  // px vertical float
+    const tiltAmplitude = 10;    // deg rotation
+
+    const driftSpeed = 0.2;      // cycles per second for drift X
+    const floatSpeed = 0.05;      // cycles per second for float Y
+    const tiltSpeed = 0.1;       // cycles per second for rotation
+
+    let startTime = null;
+
+    function animate(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const elapsed = (timestamp - startTime) / 1000; // seconds
+
+        leftItems.forEach((el, i) => {
+            if (isElementInViewport(el)) {
+                // phase offsets so each left item is slightly out of sync
+                const phaseOffsetX = (i / leftItems.length) * 2 * Math.PI;
+                const phaseOffsetY = (i / leftItems.length) * Math.PI;
+                const phaseOffsetTilt = (i / leftItems.length) * Math.PI / 2;
+
+                const x = driftAmplitudeX * Math.sin(2 * Math.PI * driftSpeed * elapsed + phaseOffsetX);
+                const y = floatAmplitudeY * Math.sin(2 * Math.PI * floatSpeed * elapsed + phaseOffsetY);
+                const rotation = tiltAmplitude * Math.sin(2 * Math.PI * tiltSpeed * elapsed + phaseOffsetTilt);
+
+                el.style.transform = `translateX(${x.toFixed(2)}px) translateY(${y.toFixed(2)}px) rotate(${rotation.toFixed(2)}deg)`;
+            }
+        });
+
+        rightItems.forEach((el, i) => {
+            if (isElementInViewport(el)) {
+                // Different base phase offsets for right items to desync from left items + among themselves
+                const basePhase = Math.PI / 4;
+                const phaseOffsetX = basePhase + (i / rightItems.length) * 2 * Math.PI;
+                const phaseOffsetY = basePhase + (i / rightItems.length) * Math.PI;
+                const phaseOffsetTilt = basePhase + (i / rightItems.length) * Math.PI / 2;
+
+                const x = driftAmplitudeX * Math.sin(2 * Math.PI * driftSpeed * elapsed + phaseOffsetX);
+                const y = floatAmplitudeY * Math.sin(2 * Math.PI * floatSpeed * elapsed + phaseOffsetY);
+                const rotation = tiltAmplitude * Math.sin(2 * Math.PI * tiltSpeed * elapsed + phaseOffsetTilt);
+
+                el.style.transform = `translateX(${x.toFixed(2)}px) translateY(${y.toFixed(2)}px) rotate(${rotation.toFixed(2)}deg)`;
+            }
+        });
+
+        requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+});

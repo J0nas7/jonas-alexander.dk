@@ -1,39 +1,93 @@
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
 <header>
     <nav class="page-navigator-wrapper" aria-label="Page navigation">
         <button class="navigator-toggle" aria-controls="page-navigator-menu" aria-expanded="false" aria-label="Open navigation menu">≡</button>
         <div class="page-navigator" id="page-navigator-menu">
             <input type="checkbox" id="navigator-toggle" style="display:none;" aria-hidden="true" tabindex="-1" />
             <ul>
-                <li><strong>Jump to:</strong></li>
+                <li style="margin-bottom: 30px;">
+                    <strong>Jump to:</strong>
+                </li>
                 <li>
+                    <img
+                        src="/wp-content/uploads/cap.png"
+                        alt="Picture of a floating cap"
+                        class="navigation-hovering-item left"
+                        width="60px" />
                     <a href="#jonas">Jonas Sørensen</a>
                 </li>
                 <li>
                     <a href="#ilovecoding">I love coding</a>
+                    <img
+                        src="/wp-content/uploads/coding.png"
+                        alt="Picture of a floating code tag"
+                        class="navigation-hovering-item right"
+                        width="60px" />
                 </li>
                 <li>
-                    <a href="#fullstack">Full-stack projects</a>
+                    <img
+                        src="/wp-content/uploads/full-stack.png"
+                        alt="Picture of a floating computer"
+                        class="navigation-hovering-item left"
+                        width="60px" />
+                    <a href="#fullstack">Full-stack</a>
                 </li>
                 <li>
                     <a href="#mobileapps">Mobile Apps</a>
+                    <img
+                        src="/wp-content/uploads/mobile-phone.webp"
+                        alt="Picture of a floating mobile phone"
+                        class="navigation-hovering-item right"
+                        width="60px" />
                 </li>
                 <li>
-                    <a href="#wordpress">WordPress websites</a>
+                    <img
+                        src="/wp-content/uploads/wordpress-logo.png"
+                        alt="Picture of a floating wordpress logo"
+                        class="navigation-hovering-item left"
+                        width="60px" />
+                    <a href="#wordpress">WordPress</a>
                 </li>
                 <li>
-                    <a href="#contactinfo">Contact info &amp; socials</a>
+                    <a href="#contactinfo">Contact/Socials</a>
+                    <img
+                        src="/wp-content/uploads/linkedin-logo.png"
+                        alt="Picture of a floating linkedin logo"
+                        class="navigation-hovering-item right"
+                        width="60px" />
                 </li>
                 <li>
-                    <a href="#work">Working Experience</a>
+                    <img
+                        src="/wp-content/uploads/work-icon.png"
+                        alt="Picture of a floating working icon"
+                        class="navigation-hovering-item left"
+                        width="60px" />
+                    <a href="#work">Jobs</a>
                 </li>
                 <li>
                     <a href="#interests">Interests</a>
+                    <img
+                        src="/wp-content/uploads/running-icon.png"
+                        alt="Picture of a floating running shoe"
+                        class="navigation-hovering-item right"
+                        width="60px" />
                 </li>
                 <li>
+                    <img
+                        src="/wp-content/uploads/brain-icon.png"
+                        alt="Picture of a floating brain carrying a book and a pencil"
+                        class="navigation-hovering-item left"
+                        width="60px" />
                     <a href="#codingskills">Coding-skills</a>
                 </li>
                 <li>
                     <a href="#educations">Educations</a>
+                    <img
+                        src="/wp-content/uploads/books-icon.png"
+                        alt="Picture of a floating pile of books"
+                        class="navigation-hovering-item right"
+                        width="60px" />
                 </li>
             </ul>
         </div>
@@ -49,7 +103,7 @@
                     <div class="image-container">
                         <img decoding="async" loading="lazy" class="hover-image"
                             alt="My Picture"
-                            src="/wp-content/uploads/jonas-1.jpg" />
+                            src="/wp-content/uploads/jonas-1.png" />
                     </div>
                 </div>
             </figure>
