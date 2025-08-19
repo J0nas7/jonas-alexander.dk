@@ -100,11 +100,16 @@
         <div class="my-short-info-grid">
             <figure class="info-grid">
                 <div class="my-picture-wrapper">
-                    <div class="image-container">
-                        <img decoding="async" loading="lazy" class="hover-image"
+                    <a
+                        href="/wp-content/uploads/jonas-1.jpg"
+                        class="image-container"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img decoding=" async" loading="lazy" class="hover-image"
                             alt="My Picture"
                             src="/wp-content/uploads/jonas-1.png" />
-                    </div>
+                        <span>AI-generated wax look-alike 🖼</span>
+                    </a>
                 </div>
             </figure>
             <div class="info-grid details">
@@ -214,25 +219,6 @@
                 <div class="projects-group-grid">
                     <div class="projects-group-item slide-fade-wrapper left">
                         <img decoding="async" loading="lazy" class="parallax-image"
-                            alt="CasaNova - Property Listing Marketplace"
-                            src="/wp-content/uploads/references/casanova-property-listing.jpg" />
-                        <div class="projects-group-item-description">
-                            <h4 class="projects-group-item-title">
-                                <a href="/casanova-property-listing-platform" target="_blank">
-                                    CasaNova - Property Listing Platform
-                                </a>
-                            </h4>
-                            <p>CasaNova is a full-stack real estate listing platform built with Laravel, Next.js,<br />
-                                and SQLite. It allows users to create, edit, and manage property listings with advanced
-                                image handling features.</p>
-                            <p>The platform supports drag-and-drop image reordering, inline editing, and multi-file
-                                uploads.<br />
-                                CasaNova demonstrates my ability to build intuitive, user-friendly interfaces
-                                backed by solid backend architecture for dynamic content management.</p>
-                        </div>
-                    </div>
-                    <div class="projects-group-item slide-fade-wrapper left">
-                        <img decoding="async" loading="lazy" class="parallax-image"
                             alt="GiveOrTake - Project Management & Time Tracking"
                             src="/wp-content/uploads/references/giveortake-project-time.jpg" />
                         <div class="projects-group-item-description">
@@ -249,6 +235,25 @@
                                 collaboration while ensuring accountability.<br />
                                 This project showcases my ability to build scalable, data-driven applications with real-time
                                 collaboration features.</p>
+                        </div>
+                    </div>
+                    <div class="projects-group-item slide-fade-wrapper left">
+                        <img decoding="async" loading="lazy" class="parallax-image"
+                            alt="CasaNova - Property Listing Marketplace"
+                            src="/wp-content/uploads/references/casanova-property-listing.jpg" />
+                        <div class="projects-group-item-description">
+                            <h4 class="projects-group-item-title">
+                                <a href="/casanova-property-listing-platform" target="_blank">
+                                    CasaNova - Property Listing Platform
+                                </a>
+                            </h4>
+                            <p>CasaNova is a full-stack real estate listing platform built with Laravel, Next.js,<br />
+                                and SQLite. It allows users to create, edit, and manage property listings with advanced
+                                image handling features.</p>
+                            <p>The platform supports drag-and-drop image reordering, inline editing, and multi-file
+                                uploads.<br />
+                                CasaNova demonstrates my ability to build intuitive, user-friendly interfaces
+                                backed by solid backend architecture for dynamic content management.</p>
                         </div>
                     </div>
                     <div class=" projects-group-item slide-fade-wrapper left">

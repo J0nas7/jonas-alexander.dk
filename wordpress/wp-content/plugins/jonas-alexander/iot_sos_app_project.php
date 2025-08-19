@@ -3,14 +3,14 @@ $galleryImages = [
     "Showcase" => "1.jpg",
 ];
 $galleryVideos = [
-    "Fra REMA til Sorgenfri" => "1IlsvnGlUHUAhCVWpjWRnAPzjWC8AFWUG",
-    "Fra REMA til SPAR" => "1GHTC4JQz14lisWvYBTJPKnxng8mSExYW",
-    "Bo kører til Sorgenfri" => "1mmCaUJbJxkU9WY24kODpNlxrwRWkOj2-",
-    "Hjemkomst Ur-skive" => "1qmcrVN9a0e7FTRQqyCnCKmZqiqKqiS-X",
-    "SOS vs Find" => "1vXu3k4EM6yyZvjRPD9gKldVWwe7jcp3y",
-    "Zoom indstillinger" => "1ef_6PqiMTj3mDg5SyQZEwTjBYdwjOBsf",
-    "Vælge mellem venner" => "1eBHALRpWw3SXodCnnPWnSmRAcu11JrvQ",
-    "Rutevælger" => "1u8eaMngphd_Pvw9TluorR0UlBlAxYD2z",
+    "Fra REMA til Sorgenfri" => "https://www.youtube.com/watch?v=xX4ceCtnNOA",
+    "Fra REMA til SPAR" => "https://www.youtube.com/watch?v=BCsKmIusXfU",
+    "Bo kører til Sorgenfri" => "https://www.youtube.com/watch?v=Vkp-A2vdr4U",
+    "Hjemkomst Ur-skive" => "https://youtube.com/shorts/UAhzDXedpVY?feature=share",
+    "SOS vs Find" => "https://youtube.com/shorts/0i-MCp_YTFM?feature=share",
+    "Zoom indstillinger" => "https://youtube.com/shorts/wjKQWbe5-fo?feature=share",
+    "Vælge mellem venner" => "https://youtube.com/shorts/8qcXjCH2FeY?feature=share",
+    "Rutevælger" => "https://youtube.com/shorts/QDb1Ml3oj8s?feature=share",
 ];
 
 $galleryAlbums = [

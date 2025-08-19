@@ -66,7 +66,13 @@ $folderName = str_replace('@', '', $folderName);
                                 <?php foreach ($album["Images"] as $caption => $image): ?>
                                     <p class="gallery-item">
                                         <?php if (strpos($image, '.mp4') || strpos($image, '.mov') || strlen($image) > 6) : ?>
-                                            <?php if (strlen($image) > 6) : ?>
+                                            <?php if (!empty($image) && filter_var($image, FILTER_VALIDATE_URL)) : ?>
+                                                <a href="<?= $image; ?>" target="_blank">
+                                                    <img decoding="async" loading="lazy" class="gallery-image"
+                                                        alt="YouTube Video <?= $image ?>"
+                                                        src="https://placehold.co/600x400?text=Video" />
+                                                </a>
+                                            <?php elseif (strlen($image) > 6) : ?>
                                                 <a href="https://drive.google.com/file/d/<?= $image; ?>/view" target="_blank">
                                                     <img decoding="async" loading="lazy" class="gallery-image"
                                                         alt="Project Video <?= $image ?>"
