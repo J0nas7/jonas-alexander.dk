@@ -477,7 +477,7 @@
             <div class="my-picture-wrapper-2">
                 <img decoding="async" loading="lazy" class="the-picture"
                     alt="My picture"
-                    src="/wp-content/uploads/jonas-2.jpg" />
+                    src="/wp-content/uploads/jonas-3.jpg" />
             </div>
             <div class="my-contact-info">
                 <div>
@@ -485,8 +485,10 @@
                         <span class="c37 c28 c34 c49">Jonas Alexander Sørensen</span><br />
                         <img decoding="async" loading="lazy" style="width: 20px; height: 20px;"
                             alt="E-mail"
-                            src="/wp-content/uploads/image3.png" /> <span
-                            class="c23"> jonas.sorensen.93dk@gmail.com</span><br />
+                            src="/wp-content/uploads/image3.png" />
+                        <span class="c23 c35"><a class="c3"
+                                href="mailto:jonas.sorensen.93dk@gmx.com" aria-label="My email address">jonas.sorensen.93dk@gmx.com</a></span>
+                        <br />
                         <img decoding="async" loading="lazy" style="width: 20px; height: 20px;"
                             alt="Phone"
                             src="/wp-content/uploads/image1.png" /> <span
@@ -496,7 +498,7 @@
                         <img decoding="async" loading="lazy" style="width: 20px; height: 20px;"
                             alt="Age"
                             src="/wp-content/uploads/image2.png" /> <span
-                            class="c23 c36"> 31 years old, 7 July 1993</span>
+                            class="c23 c36"> 32 years old, 7 July 1993</span>
                     </p>
                     <p class="c30">
                         <img decoding="async" loading="lazy" style="width: 20px; height: 20px;"
@@ -523,123 +525,157 @@
     </section>
 
     <article class="page-content cv-wrapper working-experience" id="work">
-        <div class="working-headline">
-            <h1 id="h.d3ub5g7mrx2l" class="c38">Working Experience</h1>
-        </div>
-        <div class="work-experiences">
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="level level-1">1</span>
-                        <span class="c28 c19">Freelance React Native Developer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">Funler ApS</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Nov. 2024 - mar. 2025</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Freelance, Remote</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">React Native</span>
-                        <span class="work-skills-item">TypeScript</span>
-                        <span class="work-skills-item">Jest</span>
-                        <span class="work-skills-item">Redux</span>
-                        <span class="work-skills-item">Material Design</span>
-                        <span class="work-skills-item">Styled Components</span>
-                        <span class="work-skills-item">JSON</span>
-                        <span class="work-skills-item">JWT</span>
-                        <span class="work-skills-item">REST</span>
-                        <span class="work-skills-item">GitHub Actions</span>
-                        <span class="work-skills-item">Firebase Messaging</span>
-                        <span class="work-skills-item">Firebase App Distribution</span>
-                        <span class="work-skills-item">Google Auth</span>
-                        <span class="work-skills-item">Facebook Auth</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14">
-                            As a freelance mobile app engineer for Funler ApS, I have been responsible for developing and
-                            deploying the Funler Messaging App (versions 0.1 and 0.2) for iOS and Android.<br />
-                            My role includes building scalable and responsive features using React Native, TypeScript,
-                            Redux, and Styled
-                            Components, ensuring a smooth and engaging user experience.<br /><br />
-
-                            I have also integrated Firebase Messaging, Google & Facebook Authentication, and GitHub Actions
-                            for CI/CD automation.<br />
-                            Additionally, I have worked with JWT authentication, RESTful APIs, and
-                            Firebase App Distribution to streamline the deployment process.
-                        </span>
-                    </p>
-                    <p class="c7">
-                        <span class="c16 c0"></span>
-                    </p>
+        <h1 class="working-headline">
+            <div class="text-reveal-line">
+                <div class="text-reveal-line-wrapper">
+                    <div class="text-huge text-lighter">Working</div>
+                </div>
+                <div class="text-reveal-hover-wrapper" style="width: 100%;">
+                    <div class="text-huge">Working</div>
                 </div>
             </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="level level-1">2</span>
-                        <span class="c28 c19">Full-stack Developer & Mobile App Engineer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">IOT-company, Frederiksberg</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Jan. 2024 - mar. 2025</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Full-time</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">Laravel</span>
-                        <span class="work-skills-item">NoSQL</span>
-                        <span class="work-skills-item">Blade</span>
-                        <span class="work-skills-item">PHPUnit</span>
-                        <span class="work-skills-item">React</span>
-                        <span class="work-skills-item">Next.js</span>
-                        <span class="work-skills-item">TypeScript</span>
-                        <span class="work-skills-item">JWT</span>
-                        <span class="work-skills-item">Redux</span>
-                        <span class="work-skills-item">Jest</span>
-                        <span class="work-skills-item">Material Design</span>
-                        <span class="work-skills-item">Tailwind</span>
-                        <span class="work-skills-item">CSS Modules</span>
-                        <span class="work-skills-item">SCSS</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14">
-                            I have the task of modernizing an old Laravel program, which must be upgraded from PHP 5 to PHP
-                            8 and which must also be expanded with completely new features.<br>
-                            I am moving the frontend away from Laravel's built-in Blade template, to a separate reactive
-                            frontend built with Next.js.
-                            <br><br>
-                            Secondly I am extending the mobile app with new features, using SwiftUI in Xcode for iOS
-                            and afterwards using React Native for a hybrid-app.<br>
-                            The backend is built in Node.js using Express and Socket.io, hosted on Google Cloud.
-                        </span>
-                    </p>
-                    <p class="c7">
-                        <span class="c16 c0"></span>
-                    </p>
+            <div class="text-reveal-line">
+                <div class="text-reveal-line-wrapper">
+                    <div class="text-huge text-lighter">Experience</div>
+                </div>
+                <div class="text-reveal-hover-wrapper" style="width: 100%;">
+                    <div class="text-huge">Experience</div>
                 </div>
             </div>
-
-            <div class="work-experience-list">
-                <div>
+        </h1>
+        <div class="work-history">
+            <div class="work-history-left">
+                <div class="work-experience-list">
                     <div>
-                        <p class="c8">
-                            <!-- <span class="level level-1">2</span> -->
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Freelance React Native Developer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">Funler ApS</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Nov. 2024 - mar. 2025</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Freelance, Remote</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">React Native</li>
+                            <li class="work-skills-item">TypeScript</li>
+                            <li class="work-skills-item">Jest</li>
+                            <li class="work-skills-item">Redux</li>
+                            <li class="work-skills-item">Material Design</li>
+                            <li class="work-skills-item">Styled Components</li>
+                            <li class="work-skills-item">JSON</li>
+                            <li class="work-skills-item">JWT</li>
+                            <li class="work-skills-item">REST</li>
+                            <li class="work-skills-item">GitHub Actions</li>
+                            <li class="work-skills-item">Firebase Messaging</li>
+                            <li class="work-skills-item">Firebase App Distribution</li>
+                            <li class="work-skills-item">Google Auth</li>
+                            <li class="work-skills-item">Facebook Auth</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14">
+                                As a freelance mobile app engineer for Funler ApS, I have been responsible for developing and
+                                deploying the Funler Messaging App (versions 0.1 and 0.2) for iOS and Android.<br />
+                                My role includes building scalable and responsive features using React Native, TypeScript,
+                                Redux, and Styled
+                                Components, ensuring a smooth and engaging user experience.<br /><br />
+
+                                I have also integrated Firebase Messaging, Google & Facebook Authentication, and GitHub Actions
+                                for CI/CD automation.<br />
+                                Additionally, I have worked with JWT authentication, RESTful APIs, and
+                                Firebase App Distribution to streamline the deployment process.
+                            </span>
+                        </p>
+                        <p class="c7">
+                            <span class="c16 c0"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Full-stack Developer & Mobile App Engineer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">IOT-company, Frederiksberg</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Jan. 2024 - Mar. 2025</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Full-time</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">Laravel</li>
+                            <li class="work-skills-item">NoSQL</li>
+                            <li class="work-skills-item">Blade</li>
+                            <li class="work-skills-item">PHPUnit</li>
+                            <li class="work-skills-item">React</li>
+                            <li class="work-skills-item">Next.js</li>
+                            <li class="work-skills-item">TypeScript</li>
+                            <li class="work-skills-item">JWT</li>
+                            <li class="work-skills-item">Redux</li>
+                            <li class="work-skills-item">Jest</li>
+                            <li class="work-skills-item">Material Design</li>
+                            <li class="work-skills-item">Tailwind</li>
+                            <li class="work-skills-item">CSS Modules</li>
+                            <li class="work-skills-item">SCSS</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14">
+                                I have the task of modernizing an old Laravel program, which must be upgraded from PHP 5 to PHP
+                                8 and which must also be expanded with completely new features.<br>
+                                I am moving the frontend away from Laravel's built-in Blade template, to a separate reactive
+                                frontend built with Next.js.
+                                <br><br>
+                                Secondly I am extending the mobile app with new features, using SwiftUI in Xcode for iOS
+                                and afterwards using React Native for a hybrid-app.<br>
+                                The backend is built in Node.js using Express and Socket.io, hosted on Google Cloud.
+                            </span>
+                        </p>
+                        <p class="c7">
+                            <span class="c16 c0"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <div>
+                            <p class="c8 experience-title">
+                                <!-- <span class="level level-1">2</span> -->
+                                <span class="c28 c19">Sales Manager</span>
+                            </p>
+                            <p class="c10 clear-both">
+                                <span class="c21">Lidl, Vangedevej, Dyssegaard</span>
+                            </p>
+                            <p class="c10 experience-period">
+                                <span class="c21">May-sep. 2023</span>
+                            </p>
+                            <p class="c10 experience-type">
+                                <span class="c21">Full-time</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <!-- <div style="clear: both;margin-top: 100px;"> -->
+                        <p class="c8 experience-title">
+                            <!-- <span class="level level-1">3</span> -->
                             <span class="c28 c19">Sales Manager</span>
                         </p>
                         <p class="c10 clear-both">
-                            <span class="c21">Lidl, Vangedevej, Dyssegaard</span>
+                            <span class="c21">Netto, Frederikssundsvej, Kbh NV</span>
                         </p>
                         <p class="c10 experience-period">
-                            <span class="c21">May-sep. 2023</span>
+                            <span class="c21">May 2022 - jan. 2023</span>
                         </p>
                         <p class="c10 experience-type">
                             <span class="c21">Full-time</span>
@@ -647,229 +683,219 @@
                     </div>
                 </div>
             </div>
+            <div class="work-history-right">
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <!-- <span class="level level-1">4</span> -->
+                            <span class="c28 c19">Full Stack Developer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">Serento, Remote</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Aug-Oct. 2021</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Internship/Full-time</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">MySQL</li>
+                            <li class="work-skills-item">HTML/CSS</li>
+                            <li class="work-skills-item">SCSS</li>
+                            <li class="work-skills-item">JavaScript/jQuery</li>
+                            <li class="work-skills-item">Webpack</li>
+                            <li class="work-skills-item">Git/SourceTree</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14">During my web development PBA on the internship, I worked on developing a simple
+                                SEO analysis tool.</span>
+                        </p>
+                        <p class="c7"> </p>
+                    </div>
+                </div>
 
-            <div class="work-experience-list">
-                <div>
-                    <!-- <div style="clear: both;margin-top: 100px;"> -->
-                    <p class="c8">
-                        <!-- <span class="level level-1">3</span> -->
-                        <span class="c28 c19">Sales Manager</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">Netto, Frederikssundsvej, Kbh NV</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">May 2022 - jan. 2023</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Full-time</span>
-                    </p>
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Assistant Manager</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">Netto, Bagsværd Hovedgade</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Year 2021</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Full-time</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Founder&amp;Partner, Full-stack Developer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">SEObetter, Remote</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Jul. 2012 - Aug. 2021</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Part-time/Student</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">MySQL</li>
+                            <li class="work-skills-item">HTML/CSS</li>
+                            <li class="work-skills-item">JavaScript/jQuery</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14 c47">I developed a website analytics platform, learned a lot along the way, and
+                                started over at different points when I had learned something ground-breaking.</span>
+                        </p>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14 c47">The platform was reminiscent of and inspired by Google Analytics and
+                                Hotjar.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Frontend Developer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">HTML24, Kbh S.</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Aug - Nov. 2019</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Internship/Full-time</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">WP+WC</li>
+                            <li class="work-skills-item">ACF</li>
+                            <li class="work-skills-item">Docker+Gulp</li>
+                            <li class="work-skills-item">HTML/CSS</li>
+                            <li class="work-skills-item">SCSS/Stylus</li>
+                            <li class="work-skills-item">Bootstrap</li>
+                            <li class="work-skills-item">JavaScript/jQuery</li>
+                            <li class="work-skills-item">Git/SourceTree</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14 c47">During my computer science AP, I worked agile in a Scrum-like setup during the
+                                internship.</span>
+                        </p>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14 c47">There I contributed to an optimization of the Glyptotek's WordPress website
+                                and webshop.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Freelance Webdeveloper</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">Webdesigner 18, Remote</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">2015 - 2017</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Freelance/Ad-hoc</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">Joomla</li>
+                            <li class="work-skills-item">HTML/CSS</li>
+                            <li class="work-skills-item">JavaScript/jQuery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Joomla Developer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">redWEB, Odense</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">Apr. 2011 - Jul. 2012</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Part-time/Student</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">Joomla</li>
+                            <li class="work-skills-item">HTML/CSS</li>
+                            <li class="work-skills-item">JavaScript/jQuery</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14">During my web developer EUD, I worked for a year and a half as a student Joomla
+                                CMS developer, where I contributed to approx. 6 new websites.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work-experience-list">
+                    <div>
+                        <p class="c8 experience-title">
+                            <span class="c28 c19">Full stack developer</span>
+                        </p>
+                        <p class="c10 clear-both">
+                            <span class="c21">Constant Solutions, Remote</span>
+                        </p>
+                        <p class="c10 experience-period">
+                            <span class="c21">2009 - 2013</span>
+                        </p>
+                        <p class="c10 experience-type">
+                            <span class="c21">Freelance/Ad-hoc</span>
+                        </p>
+                        <ul class="c10 experience-skillset">
+                            <li class="work-skills-item">PHP</li>
+                            <li class="work-skills-item">MySQL</li>
+                            <li class="work-skills-item">HTML/CSS</li>
+                            <li class="work-skills-item">JavaScript/jQuery</li>
+                        </ul>
+                        <p class="c10" style="clear: left;">
+                            <span class="c14">I collaborated for a number of years with an independent developer, where I was
+                                given tasks on an ad-hoc basis.</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <!-- <span class="level level-1">4</span> -->
-                        <span class="c28 c19">Full Stack Developer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">Serento, Remote</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Aug-oct. 2021</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Internship/Full-time</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">MySQL</span>
-                        <span class="work-skills-item">HTML/CSS</span>
-                        <span class="work-skills-item">SCSS</span>
-                        <span class="work-skills-item">JavaScript/jQuery</span>
-                        <span class="work-skills-item">Webpack</span>
-                        <span class="work-skills-item">Git/SourceTree</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14">During my web development PBA on the internship, I worked on developing a simple
-                            SEO analysis tool.</span>
-                    </p>
-                    <p class="c7"> </p>
-                </div>
-            </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="c28 c19">Assistant Manager</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">Netto, Bagsværd Hovedgade</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Year 2021</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Full-time</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="c28 c19">Founder&amp;Partner, Full-stack Developer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">SEObetter, Remote</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Jul. 2012 - aug. 2021</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Part-time/Student</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">MySQL</span>
-                        <span class="work-skills-item">HTML/CSS</span>
-                        <span class="work-skills-item">JavaScript/jQuery</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14 c47">I developed a website analytics platform, learned a lot along the way, and
-                            started over at different points when I had learned something ground-breaking.</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14 c47">The platform was reminiscent of and inspired by Google Analytics and
-                            Hotjar.</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="c28 c19">Frontend Developer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">HTML24, Kbh S.</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Aug - nov. 2019</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Internship/Full-time</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">WP+WC</span>
-                        <span class="work-skills-item">ACF</span>
-                        <span class="work-skills-item">Docker+Gulp</span>
-                        <span class="work-skills-item">HTML/CSS</span>
-                        <span class="work-skills-item">SCSS/Stylus</span>
-                        <span class="work-skills-item">Bootstrap</span>
-                        <span class="work-skills-item">JavaScript/jQuery</span>
-                        <span class="work-skills-item">Git/SourceTree</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14 c47">During my computer science AP, I worked agile in a Scrum-like setup during the
-                            internship.</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14 c47">There I contributed to an optimization of the Glyptotek's WordPress website
-                            and webshop.</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="c28 c19">Freelance Webdeveloper</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">Webdesigner 18, Remote</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">2015 - 2017</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Freelance/Ad-hoc</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">Joomla</span>
-                        <span class="work-skills-item">HTML/CSS</span>
-                        <span class="work-skills-item">JavaScript/jQuery</span>
-                    </p>
-                    <p class="c7"> </p>
-                </div>
-            </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="c28 c19">Joomla Developer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">redWEB, Odense</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">Apr. 2011 - jul. 2012</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Part-time/Student</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">Joomla</span>
-                        <span class="work-skills-item">HTML/CSS</span>
-                        <span class="work-skills-item">JavaScript/jQuery</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14">During my web developer EUD, I worked for a year and a half as a student Joomla
-                            CMS developer, where I contributed to approx. 6 new websites.</span>
-                    </p>
-                    <p class="c7"> </p>
-                </div>
-            </div>
-
-            <div class="work-experience-list">
-                <div>
-                    <p class="c8">
-                        <span class="c28 c19">Full stack developer</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="c21">Constant Solutions, Remote</span>
-                    </p>
-                    <p class="c10 experience-period">
-                        <span class="c21">2009 - 2013</span>
-                    </p>
-                    <p class="c10 experience-type">
-                        <span class="c21">Freelance/Ad-hoc</span>
-                    </p>
-                    <p class="c10 clear-both">
-                        <span class="work-skills-item">PHP</span>
-                        <span class="work-skills-item">MySQL</span>
-                        <span class="work-skills-item">HTML/CSS</span>
-                        <span class="work-skills-item">JavaScript/jQuery</span>
-                    </p>
-                    <p class="c10">
-                        <span class="c14">I collaborated for a number of years with an independent developer, where I was
-                            given tasks on an ad-hoc basis.</span>
-                    </p>
-                </div>
-            </div>
-
         </div>
+
+
     </article>
 
     <article class="wp-block-group page-content cv-wrapper">
         <div class="interests-techstack-educations-wrapper">
             <div class="interests-techstack-container">
                 <div class="interests">
-                    <h3 class="c38" id="interests">Interests</h3>
+                    <h3 class="c38" id="interests">
+                        <div class="text-reveal-line">
+                            <div class="text-reveal-line-wrapper">
+                                <div class="text-huge text-lighter">Interests</div>
+                            </div>
+                            <div class="text-reveal-hover-wrapper" style="width: 100%;">
+                                <div class="text-huge">Interests</div>
+                            </div>
+                        </div>
+                    </h3>
                     <div class="interests-carousel">
                         <div class="interests-carousel-inner">
                             <span class="interest-item">👟 Running</span>
@@ -897,13 +923,31 @@
                     </div>
                 </div>
                 <div class="techstack">
-                    <h3 class="c38" id="codingskills">Coding-skills</h3>
+                    <h3 class="c38" id="codingskills">
+                        <div class="text-reveal-line">
+                            <div class="text-reveal-line-wrapper">
+                                <div class="text-huge text-lighter">Coding</div>
+                            </div>
+                            <div class="text-reveal-hover-wrapper" style="width: 100%;">
+                                <div class="text-huge">Coding</div>
+                            </div>
+                        </div>
+                        <div class="text-reveal-line">
+                            <div class="text-reveal-line-wrapper">
+                                <div class="text-huge text-lighter">Skills</div>
+                            </div>
+                            <div class="text-reveal-hover-wrapper" style="width: 100%;">
+                                <div class="text-huge">Skills</div>
+                            </div>
+                        </div>
+                    </h3>
                     <strong>Backend</strong>
                     <div class="techstack-group">
                         <span class="techstack-item">PHP</span>
                         <span class="techstack-item">Laravel</span>
                         <span class="techstack-item">JSON</span>
                         <span class="techstack-item">JWT</span>
+                        <span class="techstack-item">Redis</span>
                     </div>
                     <div class="techstack-group">
                         <span class="techstack-item">WordPress</span>
@@ -924,17 +968,24 @@
                     <strong>Frontend</strong>
                     <div class="techstack-group">
                         <span class="techstack-item">TypeScript</span>
-                        <span class="techstack-item">React/Next.js</span>
+                        <span class="techstack-item">React.js</span>
+                        <span class="techstack-item">Next.js</span>
+                    </div>
+                    <div class="techstack-group">
                         <span class="techstack-item">React Native</span>
-                    </div>
-                    <div class="techstack-group">
                         <span class="techstack-item">Redux</span>
-                        <span class="techstack-item">Axios</span>
-                        <span class="techstack-item">Tailwind</span>
-                        <span class="techstack-item">SCSS</span>
+                        <span class="techstack-item">useContext</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">CSS Modules</span>
+                        <span class="techstack-item">Axios</span>
+                        <span class="techstack-item">TanStack Query</span>
+                    </div>
+                    <div class="techstack-group">
+                        <span class="techstack-item">Formik</span>
+                        <span class="techstack-item">Tailwind</span>
+                        <span class="techstack-item">SCSS Modules</span>
+                    </div>
+                    <div class="techstack-group">
                         <span class="techstack-item">Styled Components</span>
                         <span class="techstack-item">Material Design</span>
                     </div>
@@ -942,17 +993,30 @@
                     <div class="techstack-group">
                         <span class="techstack-item">PHPUnit</span>
                         <span class="techstack-item">Jest</span>
-                        <span class="techstack-item">Google Cloud</span>
-                        <span class="techstack-item">Firebase</span>
+                        <span class="techstack-item">Github Actions</span>
                     </div>
                     <div class="techstack-group">
+                        <span class="techstack-item">Google Cloud</span>
+                        <span class="techstack-item">Firebase</span>
                         <span class="techstack-item">Supabase</span>
-                        <span class="techstack-item">Git</span>
-                        <span class="techstack-item">GitHub Actions</span>
+                    </div>
+                    <div class="techstack-group">
+                        <span class="techstack-item">Docker</span>
+                        <span class="techstack-item">Scaleway</span>
+                        <span class="techstack-item">DNS</span>
                     </div>
                 </div>
             </div>
-            <h3 id="h.39j0ues6x9x2" class="c38">Educations</h3>
+            <h3 id="h.39j0ues6x9x2" class="c38">
+                <div class="text-reveal-line">
+                    <div class="text-reveal-line-wrapper">
+                        <div class="text-huge text-lighter">Educations</div>
+                    </div>
+                    <div class="text-reveal-hover-wrapper" style="width: 100%;">
+                        <div class="text-huge">Educations</div>
+                    </div>
+                </div>
+            </h3>
             <div class="educations-and-skills" id="educations">
                 <!-- <div class="educations-list"> -->
                 <!-- <div> -->

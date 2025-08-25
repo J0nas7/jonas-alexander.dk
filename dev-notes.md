@@ -7,6 +7,10 @@ docker run -p 8080:8080 \
   my-wordpress-sqlite
 
 ## Re-tag and push:
-docker tag my-wordpress-sqlite rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:19-aug-2025__13.53.26 && docker push --max-concurrent-uploads=1 rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:19-aug-2025__13.53.26
+docker tag my-wordpress-sqlite rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:25-aug-2025__23.04.33 && docker push rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:25-aug-2025__23.04.33
 
-docker buildx build --platform linux/amd64 -t rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:19-aug-2025__14.02.34 --push .
+docker buildx build --platform linux/amd64 -t rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:25-aug-2025__23.06.04 --push .
+
+
+docker buildx build --no-cache --platform linux/amd64 -t rg.fr-par.scw.cloud/namespace-youthful-engelbart/my-wordpress-sqlite:25-aug-2025__23.12.12 --push .
+

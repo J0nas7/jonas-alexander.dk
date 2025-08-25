@@ -630,15 +630,9 @@ $gap: 20px;
     .cv-wrapper {
 
         .working-headline {
-            @media (min-width: 768px) {
-                width: 50%;
-            }
-
-            h1 {
-                width: 280px;
-                margin: 0 auto;
-            }
-
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 100px;
         }
 
         h3 {
@@ -788,6 +782,46 @@ $gap: 20px;
                 }
             }
         }
+
+        .work-history {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            @media (min-width: 500px) {
+                flex-direction: row;
+            }
+
+            .work-history-left,
+            .work-history-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .work-experience-list {
+                    .experience-title {
+                        width: 100%;
+                        clear: left;
+                    }
+
+                    .experience-skillset {
+                        width: 100%;
+                        list-style-type: circle;
+                        clear: both;
+
+                        li {
+                            float: left;
+                            color: rgb(0, 125, 75);
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .interests-techstack-educations-wrapper {
@@ -857,7 +891,7 @@ $gap: 20px;
                     }
 
                     @media (min-width: 500px) {
-                        grid-template-columns: repeat(4, auto);
+                        grid-template-columns: repeat(5, auto);
                     }
                 }
 
@@ -896,7 +930,7 @@ $gap: 20px;
 .letter:hover,
 .letter.active {
     font-size: 6rem;
-    animation: jump 0.6s ease infinite;
+    animation: jump 0.6s ease infinite !important;
 }
 
 @keyframes jump {
@@ -909,10 +943,6 @@ $gap: 20px;
     50% {
         transform: translateY(-10px);
     }
-}
-
-table {
-    display: none;
 }
 
 // Landing page
