@@ -878,8 +878,6 @@
                 </div>
             </div>
         </div>
-
-
     </article>
 
     <article class="wp-block-group page-content cv-wrapper">
@@ -1004,6 +1002,7 @@
                         <span class="techstack-item">Docker</span>
                         <span class="techstack-item">Scaleway</span>
                         <span class="techstack-item">DNS</span>
+                        <span class="techstack-item">Terraform</span>
                     </div>
                 </div>
             </div>

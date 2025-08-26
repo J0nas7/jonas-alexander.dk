@@ -1,6 +1,10 @@
 ## Build Docker image targeting amd64:
 docker build --platform linux/amd64 -t my-wordpress-sqlite .
 
+## Running bash script (.sh)
+Make it executable: chmod +x deploy-wordpress.sh
+Run it: ./deploy-wordpress.sh
+
 ## Running locally
 docker run -p 8080:8080 \
   -v $(pwd)/wordpress:/var/www/html \

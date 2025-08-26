@@ -445,6 +445,7 @@ $gap: 20px;
             gap: 20px;
             align-items: center;
             margin-bottom: 10px;
+            font-size: 1.5rem;
 
             #tech-text {
                 font-weight: 600;
@@ -856,13 +857,13 @@ $gap: 20px;
 
                 /* Keyframes to create the sliding effect */
                 @keyframes scroll {
+
                     0% {
-                        transform: translateX(0) !important;
+                        transform: translateX(0) translateY(0px);
                     }
 
                     100% {
-                        transform: translateX(-100%) !important;
-                        /* Move the whole section to the left */
+                        transform: translateX(-100%) translateY(0);
                     }
                 }
             }
