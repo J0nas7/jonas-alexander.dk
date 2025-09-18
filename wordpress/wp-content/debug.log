@@ -36,3 +36,9 @@
 [18-Sep-2025 12:29:28 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 50
 [18-Sep-2025 12:31:02 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 47
 [18-Sep-2025 12:31:02 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 50
+[18-Sep-2025 12:48:13 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 47
+[18-Sep-2025 12:48:13 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 50
+[18-Sep-2025 12:48:21 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 47
+[18-Sep-2025 12:48:21 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 50
+[18-Sep-2025 12:49:11 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 47
+[18-Sep-2025 12:49:11 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /var/www/html/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 50

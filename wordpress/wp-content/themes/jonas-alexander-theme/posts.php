@@ -2,9 +2,18 @@
 if (have_posts()) {
     while (have_posts()) {
         the_post();
+        $className = get_field('class_name', false, false);
 ?>
         <div class="posts-wrapper">
             <div <?php post_class(); ?>>
+                <?php if (is_singular() && $className == "blogpost") { ?>
+                    <div class="post-meta">
+                        <span class="post-date">
+                            Published: <?php echo get_the_date('l, j F, Y'); ?>
+                        </span>
+                    </div>
+                <?php } ?>
+
                 <h1 class="post-headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
                 <?php the_content(); ?>
