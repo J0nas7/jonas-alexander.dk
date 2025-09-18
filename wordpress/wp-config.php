@@ -111,8 +111,8 @@ if (strpos(" " . $_SERVER['HTTP_HOST'], "localhost")) {
 	define('WP_HOME', 'http://localhost:8080');
 	define('WP_SITEURL', 'http://localhost:8080');
 } else {
-	define('WP_HOME', 'https://jonas-alexander.infinityfree.me');
-	define('WP_SITEURL', 'https://jonas-alexander.infinityfree.me');
+	define('WP_HOME', 'https://jonas-alexander.dk');
+	define('WP_SITEURL', 'https://jonas-alexander.dk');
 }
 
 /** Sets up WordPress vars and included files. */
