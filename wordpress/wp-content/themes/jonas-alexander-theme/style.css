@@ -168,7 +168,7 @@ body {
   border-radius: 20px;
 }
 .page-wrapper .page-content.about-me {
-  background-image: url("https://jonas-alexander.dk/wp-content/uploads/brickBackground.png");
+  background-image: url("/wp-content/uploads/brickBackground.png");
 }
 .page-wrapper .page-content.portfolio-projects-parallax, .page-wrapper .page-content.portfolio-projects {
   background-color: #fff;

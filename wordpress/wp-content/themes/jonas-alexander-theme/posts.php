@@ -5,10 +5,10 @@ if (have_posts()) {
 ?>
         <div class="posts-wrapper">
             <div <?php post_class(); ?>>
-                <?php /*
-                <h2 class="post-headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                */ ?>
+                <h1 class="post-headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
                 <?php the_content(); ?>
+
                 <?php if (!is_singular() && get_the_title() == '') { ?>
                     <a href="<?php the_permalink(); ?>">(more...)</a>
                 <?php } ?>

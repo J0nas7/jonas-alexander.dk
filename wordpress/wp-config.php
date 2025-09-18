@@ -86,7 +86,9 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -109,8 +111,8 @@ if (strpos(" " . $_SERVER['HTTP_HOST'], "localhost")) {
 	define('WP_HOME', 'http://localhost:8080');
 	define('WP_SITEURL', 'http://localhost:8080');
 } else {
-	define('WP_HOME', 'https://jonas-alexander.dk');
-	define('WP_SITEURL', 'https://jonas-alexander.dk');
+	define('WP_HOME', 'https://jonas-alexander.infinityfree.me');
+	define('WP_SITEURL', 'https://jonas-alexander.infinityfree.me');
 }
 
 /** Sets up WordPress vars and included files. */

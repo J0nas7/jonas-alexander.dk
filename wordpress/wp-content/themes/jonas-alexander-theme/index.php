@@ -9,6 +9,7 @@
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" media="all" href="<?= get_template_directory_uri(); ?>/cv.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?= get_template_directory_uri(); ?>/style.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?= get_template_directory_uri(); ?>/blogpost.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
