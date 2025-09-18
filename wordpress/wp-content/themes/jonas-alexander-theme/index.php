@@ -14,7 +14,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="page-wrapper">
+    <div class="page-wrapper <?= get_field('class_name', false, false); ?>">
         <?php require_once "posts.php"; ?>
     </div>
 </body>
