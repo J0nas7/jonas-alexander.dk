@@ -13,9 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<?php
+$className = get_field('class_name', false, false);
+?>
+
 <body <?php body_class(); ?>>
-    <div class="page-wrapper <?= get_field('class_name', false, false); ?>">
-        <?php require_once "blogpost-header.php"; ?>
+    <div class="page-wrapper <?= $className; ?>">
+        <?php
+        if ($className == "blogpost") {
+            require_once "blogpost-header.php";
+        }
+        ?>
         <?php require_once "posts.php"; ?>
     </div>
 </body>
