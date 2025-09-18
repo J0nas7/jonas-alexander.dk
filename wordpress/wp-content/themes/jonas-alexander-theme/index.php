@@ -15,6 +15,7 @@
 
 <body <?php body_class(); ?>>
     <div class="page-wrapper <?= get_field('class_name', false, false); ?>">
+        <?php require_once "blogpost-header.php"; ?>
         <?php require_once "posts.php"; ?>
     </div>
 </body>
