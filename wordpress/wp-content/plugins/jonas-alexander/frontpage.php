@@ -219,6 +219,23 @@
                 <div class="projects-group-grid">
                     <div class="projects-group-item slide-fade-wrapper left">
                         <img decoding="async" loading="lazy" class="parallax-image"
+                            alt="Booohking - Simple Booking System"
+                            src="/wp-content/uploads/references/booohking.png" />
+                        <div class="projects-group-item-description">
+                            <h4 class="projects-group-item-title">
+                                <a href="/booohking-booking-system" target="_blank">
+                                    Booohking - Simple Booking System
+                                </a>
+                            </h4>
+                            <p>Booohking is a full-stack booking system built with Laravel,<br />
+                                Next.js, and PostgreSQL. It allows businesses to manage availability and accept online bookings in a clear and simple way.</p>
+                            <p>With a clean booking flow, instant confirmations, and a mobile-friendly interface,<br />
+                                Booohking helps reduce manual coordination and booking errors.
+                                This project highlights my focus on usability, clean design, and practical SaaS solutions.</p>
+                        </div>
+                    </div>
+                    <div class="projects-group-item slide-fade-wrapper left">
+                        <img decoding="async" loading="lazy" class="parallax-image"
                             alt="GiveOrTake - Project Management & Time Tracking"
                             src="/wp-content/uploads/references/giveortake-project-time.jpg" />
                         <div class="projects-group-item-description">

@@ -24,6 +24,7 @@ $projects = [
     'go_netto_project' => 'go_netto_project.php',
     'happy_with_my_bike_project' => 'happy_with_my_bike_project.php',
     'seobetter_project' => 'seobetter_project.php',
+    'booohking_project' => 'booohking_project.php',
 ];
 
 foreach ($projects as $shortcode => $template) {
