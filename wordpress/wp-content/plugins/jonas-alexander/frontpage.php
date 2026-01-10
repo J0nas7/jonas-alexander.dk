@@ -15,10 +15,10 @@
                         alt="Picture of a floating cap"
                         class="navigation-hovering-item left"
                         width="60px" />
-                    <a href="#jonas">Jonas Sørensen</a>
+                    <a href="#jonas" aria-label="I am Jonas Sørensen">Jonas Sørensen</a>
                 </li>
                 <li>
-                    <a href="#ilovecoding">I love coding</a>
+                    <a href="#ilovecoding" aria-label="Technologies I love coding">I love coding</a>
                     <img
                         src="/wp-content/uploads/coding.png"
                         alt="Picture of a floating code tag"
@@ -31,10 +31,10 @@
                         alt="Picture of a floating computer"
                         class="navigation-hovering-item left"
                         width="60px" />
-                    <a href="#fullstack">Full-stack</a>
+                    <a href="#fullstack" aria-label="My Full-stack projects">Full-stack</a>
                 </li>
                 <li>
-                    <a href="#mobileapps">Mobile Apps</a>
+                    <a href="#mobileapps" aria-label="My Mobile App projects">Mobile Apps</a>
                     <img
                         src="/wp-content/uploads/mobile-phone.webp"
                         alt="Picture of a floating mobile phone"
@@ -47,10 +47,10 @@
                         alt="Picture of a floating wordpress logo"
                         class="navigation-hovering-item left"
                         width="60px" />
-                    <a href="#wordpress">WordPress</a>
+                    <a href="#wordpress" aria-label="My WordPress website/webshop projects">WordPress</a>
                 </li>
                 <li>
-                    <a href="#contactinfo">Contact/Socials</a>
+                    <a href="#contactinfo" aria-label="My Contact/Social links">Contact/Socials</a>
                     <img
                         src="/wp-content/uploads/linkedin-logo.png"
                         alt="Picture of a floating linkedin logo"
@@ -63,10 +63,10 @@
                         alt="Picture of a floating working icon"
                         class="navigation-hovering-item left"
                         width="60px" />
-                    <a href="#work">Jobs</a>
+                    <a href="#work" aria-label="My work experience">Jobs</a>
                 </li>
                 <li>
-                    <a href="#interests">Interests</a>
+                    <a href="#interests" aria-label="My private interests">Interests</a>
                     <img
                         src="/wp-content/uploads/running-icon.png"
                         alt="Picture of a floating running shoe"
@@ -79,10 +79,10 @@
                         alt="Picture of a floating brain carrying a book and a pencil"
                         class="navigation-hovering-item left"
                         width="60px" />
-                    <a href="#codingskills">Coding-skills</a>
+                    <a href="#codingskills" aria-label="A complete list of my tech-stack">Coding-skills</a>
                 </li>
                 <li>
-                    <a href="#educations">Educations</a>
+                    <a href="#educations" aria-label="My educations">Educations</a>
                     <img
                         src="/wp-content/uploads/books-icon.png"
                         alt="Picture of a floating pile of books"
@@ -223,7 +223,10 @@
                             src="/wp-content/uploads/references/booohking.png" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/booohking-booking-system" target="_blank">
+                                <a
+                                    href="/booohking-booking-system"
+                                    target="_blank"
+                                    aria-label="Learn more about my demo project, a simple booking system, called Booohking">
                                     Booohking - Simple Booking System
                                 </a>
                             </h4>
@@ -240,7 +243,10 @@
                             src="/wp-content/uploads/references/giveortake-project-time.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/giveortake-project-management-time-tracking" target="_blank">
+                                <a
+                                    href="/giveortake-project-management-time-tracking"
+                                    target="_blank"
+                                    aria-label="Learn more about my demo project, a project management & time tracking platform, called GiveOrTake">
                                     GiveOrTake - Project Management & Time Tracking
                                 </a>
                             </h4>
@@ -260,7 +266,10 @@
                             src="/wp-content/uploads/references/casanova-property-listing.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/casanova-property-listing-platform" target="_blank">
+                                <a
+                                    href="/casanova-property-listing-platform"
+                                    target="_blank"
+                                    aria-label="Learn more about my demo project, a property listing platform, called CasaNova">
                                     CasaNova - Property Listing Platform
                                 </a>
                             </h4>
@@ -279,7 +288,10 @@
                             src="/wp-content/uploads/references/safelii-crm.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/base2sale-crm-system" target="_blank">
+                                <a
+                                    href="/base2sale-crm-system"
+                                    target="_blank"
+                                    aria-label="Learn more about my working experience, a CRM system, called Base2Sale">
                                     Base2Sale CRM system
                                 </a>
                             </h4>
@@ -295,7 +307,10 @@
                             src="/wp-content/uploads/references/yourspace-rocket.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/yourspace-slack-discord-clone" target="_blank">
+                                <a
+                                    href="/yourspace-slack-discord-clone"
+                                    target="_blank"
+                                    aria-label="Learn more about my demo project, a slack/discord clone, called YourSpace">
                                     YourSpace - Slack/Discord Clone
                                 </a>
                             </h4>
@@ -314,7 +329,10 @@
                             src="/wp-content/uploads/references/seobetter.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/seobetter-website-analytics-seo-optimization" target="_blank">
+                                <a
+                                    href="/seobetter-website-analytics-seo-optimization"
+                                    target="_blank"
+                                    aria-label="Learn more about my working experience, analytics & SEO optimization platform, called SEObetter">
                                     SEObetter - Website Analytics & SEO Optimization Platform
                                 </a>
                             </h4>
@@ -360,7 +378,10 @@
                             src="/wp-content/uploads/references/funler-app.png" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/funler-messaging" target="_blank">
+                                <a
+                                    href="/funler-messaging"
+                                    target="_blank"
+                                    aria-label="Learn more about my freelance task of creating a mobile React Native app, for an AI Chatbot company, called Funler Messaging">
                                     Funler Messaging
                                 </a>
                             </h4>
@@ -377,7 +398,10 @@
                             src="/wp-content/uploads/references/safelii-app-2.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/iot-sos-app" target="_blank">
+                                <a
+                                    href="/iot-sos-app"
+                                    target="_blank"
+                                    aria-label="Learn more about my working experience, extending an Internet of Things mobile app">
                                     IOT APP
                                 </a>
                             </h4>
@@ -438,7 +462,10 @@
                             src="/wp-content/uploads/references/allingbjerggaard-0.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/allingbjerggaard" target="_blank">
+                                <a
+                                    href="/allingbjerggaard"
+                                    target="_blank"
+                                    aria-label="Learn more about my freelance task of creating a WordPress webshop for a small farm shop">
                                     Allingbjerggaard.dk - Responsive WooCommmerce webshop
                                 </a>
                             </h4>
@@ -457,7 +484,10 @@
                             src="/wp-content/uploads/references/rema-vigo-gonetto.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/gonetto" target="_blank">
+                                <a
+                                    href="/gonetto"
+                                    target="_blank"
+                                    aria-label="Learn more about my demo project, a webshop clone of REMA 1000 Vigo, called Go@Netto">
                                     Go@Netto - REMA 1000 Vigo Webshop Clone
                                 </a>
                             </h4>
@@ -475,7 +505,10 @@
                             src="/wp-content/uploads/references/happy-0.jpg" />
                         <div class="projects-group-item-description">
                             <h4 class="projects-group-item-title">
-                                <a href="/happy-with-my-bike" target="_blank">
+                                <a
+                                    href="/happy-with-my-bike"
+                                    target="_blank"
+                                    aria-label="Learn more about my multi-language WordPress/WooCommerce demo webshop, called Happy with my bike">
                                     Happy with my bike - Responsive WC webshop
                                 </a>
                             </h4>
@@ -504,7 +537,7 @@
                             alt="E-mail"
                             src="/wp-content/uploads/image3.png" />
                         <span class="c23 c35"><a class="c3"
-                                href="mailto:jonas.sorensen.93dk@gmx.com" aria-label="My email address">jonas.sorensen.93dk@gmx.com</a></span>
+                                href="mailto:jonas.sorensen.93dk@gmx.com" aria-label="Send me an email">jonas.sorensen.93dk@gmx.com</a></span>
                         <br />
                         <img decoding="async" loading="lazy" style="width: 20px; height: 20px;"
                             alt="Phone"
@@ -525,7 +558,7 @@
                         <img decoding="async" loading="lazy" style="width: 20.11px; height: 21.50px;"
                             alt="Github"
                             src="/wp-content/uploads/image4.png" />
-                        <span class="c23 c35"><a class="c3" href="https://github.com/J0nas7" target="_blank"
+                        <span class="c23 c35"><a class="c3" href="https://github.com/J0nas7" target="_blank" aria-label="Visit my GitHub profile"
                                 rel="noopener">Github.com/J0nas7</a><br /></span>
                     </p>
                     <div class="linkedIn">
@@ -534,7 +567,7 @@
                             src="/wp-content/uploads/linkedin-icon.png" />
                         <span class="c23 c35"><a class="c3"
                                 href="https://www.linkedin.com/in/jonas-alexander-sørensen-92840495/" target="_blank"
-                                rel="noopener" aria-label="My LinkedIn Profile">jonas-alexander-sørensen-92840495</a></span>
+                                rel="noopener" aria-label="Visit my LinkedIn Profile">jonas-alexander-sørensen-92840495</a></span>
                     </div>
                 </div>
             </div>
