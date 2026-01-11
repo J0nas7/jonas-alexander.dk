@@ -527,7 +527,7 @@
             <div class="my-picture-wrapper-2">
                 <img decoding="async" loading="lazy" class="the-picture"
                     alt="My picture"
-                    src="/wp-content/uploads/jonas-3.jpg" />
+                    src="/wp-content/uploads/jonas-library.jpg" />
             </div>
             <div class="my-contact-info">
                 <div>
