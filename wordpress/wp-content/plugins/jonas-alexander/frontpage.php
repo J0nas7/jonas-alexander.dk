@@ -114,10 +114,10 @@
             </figure>
             <div class="info-grid details">
                 <div class="i-am-jonas">
-                    <span class="my-name jump-letters">My name is</span>
-                    <h1 class="my-name jump-letters">Jonas Sørensen</h1>
-                    <span class="my-occupation jump-letters">I am a very</span>
-                    <h2 class="my-occupation jump-letters">Skilled developer</h2>
+                    <span class="my-name jump-letters" aria-label="My name is">My name is</span>
+                    <h1 class="my-name jump-letters" aria-label="Jonas Sørensen">Jonas Sørensen</h1>
+                    <span class="my-occupation jump-letters" aria-label="I am a very">I am a very</span>
+                    <h2 class="my-occupation jump-letters" aria-label="Skilled developer">Skilled developer</h2>
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
             <div class="projects-group">
                 <h3 class="projects-group-title" id="fullstack">
                     <div class="text-reveal-line">
-                        <div class=" text-reveal-line-wrapper">
+                        <div class=" text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Highlighted</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -200,7 +200,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class=" text-reveal-line-wrapper">
+                        <div class=" text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Full-stack</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -208,7 +208,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class=" text-reveal-line-wrapper">
+                        <div class=" text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Projects</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -347,7 +347,7 @@
             <div class="projects-group">
                 <h3 class="projects-group-title" id="mobileapps">
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Highlighted</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -355,7 +355,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Mobile</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -363,7 +363,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Apps</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -415,7 +415,7 @@
             <div class="projects-group">
                 <h3 class="projects-group-title" id="wordpress">
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Highlighted</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -423,7 +423,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">WordPress</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -431,7 +431,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">&amp;</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -439,7 +439,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">WooCommerce</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -447,7 +447,7 @@
                         </div>
                     </div>
                     <div class="text-reveal-line">
-                        <div class="text-reveal-line-wrapper">
+                        <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">webshops</div>
                         </div>
                         <div class="text-reveal-hover-wrapper">
@@ -577,7 +577,7 @@
     <article class="page-content cv-wrapper working-experience" id="work">
         <h1 class="working-headline">
             <div class="text-reveal-line">
-                <div class="text-reveal-line-wrapper">
+                <div class="text-reveal-line-wrapper" aria-hidden="true">
                     <div class="text-huge text-lighter">Working</div>
                 </div>
                 <div class="text-reveal-hover-wrapper" style="width: 100%;">
@@ -585,7 +585,7 @@
                 </div>
             </div>
             <div class="text-reveal-line">
-                <div class="text-reveal-line-wrapper">
+                <div class="text-reveal-line-wrapper" aria-hidden="true">
                     <div class="text-huge text-lighter">Experience</div>
                 </div>
                 <div class="text-reveal-hover-wrapper" style="width: 100%;">
@@ -936,7 +936,7 @@
                 <div class="interests">
                     <h3 class="c38" id="interests">
                         <div class="text-reveal-line">
-                            <div class="text-reveal-line-wrapper">
+                            <div class="text-reveal-line-wrapper" aria-hidden="true">
                                 <div class="text-huge text-lighter">Interests</div>
                             </div>
                             <div class="text-reveal-hover-wrapper" style="width: 100%;">
@@ -973,7 +973,7 @@
                 <div class="techstack">
                     <h3 class="c38" id="codingskills">
                         <div class="text-reveal-line">
-                            <div class="text-reveal-line-wrapper">
+                            <div class="text-reveal-line-wrapper" aria-hidden="true">
                                 <div class="text-huge text-lighter">Coding</div>
                             </div>
                             <div class="text-reveal-hover-wrapper" style="width: 100%;">
@@ -981,7 +981,7 @@
                             </div>
                         </div>
                         <div class="text-reveal-line">
-                            <div class="text-reveal-line-wrapper">
+                            <div class="text-reveal-line-wrapper" aria-hidden="true">
                                 <div class="text-huge text-lighter">Skills</div>
                             </div>
                             <div class="text-reveal-hover-wrapper" style="width: 100%;">
@@ -1058,7 +1058,7 @@
             </div>
             <h3 id="h.39j0ues6x9x2" class="c38">
                 <div class="text-reveal-line">
-                    <div class="text-reveal-line-wrapper">
+                    <div class="text-reveal-line-wrapper" aria-hidden="true">
                         <div class="text-huge text-lighter">Educations</div>
                     </div>
                     <div class="text-reveal-hover-wrapper" style="width: 100%;">

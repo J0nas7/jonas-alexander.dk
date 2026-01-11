@@ -14,7 +14,13 @@ if (have_posts()) {
                     </div>
                 <?php } ?>
 
-                <h1 class="post-headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <h1
+                    <?= (get_the_title() == '' ? 'aria-hidden="true" ' : ""); ?>
+                    class="post-headline">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </h1>
 
                 <?php the_content(); ?>
 

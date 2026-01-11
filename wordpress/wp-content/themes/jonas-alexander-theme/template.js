@@ -114,9 +114,9 @@ document.querySelectorAll('.image-container').forEach(container => {
 document.querySelectorAll('.jump-letters').forEach(element => {
     element.innerHTML = element.textContent.split('').map(letter => {
         if (letter === ' ') {
-            return `<span class="letter">&nbsp;</span>`;
+            return `<span class="letter space" aria-hidden="true">&nbsp;</span>`;
         }
-        return `<span class="letter">${letter}</span>`;
+        return `<span class="letter" aria-hidden="true">${letter}</span>`;
     }).join('');
 });
 
@@ -179,8 +179,8 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Select all the .letter elements
-const letters = document.querySelectorAll('.i-am-jonas .letter');
+// Select all the .letter elements except spaces
+const letters = document.querySelectorAll('.i-am-jonas .letter:not(.space)');
 let activeIndex = null;
 
 function pickRandomLetter() {
