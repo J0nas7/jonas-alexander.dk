@@ -10,22 +10,6 @@ html {
     box-sizing: border-box;
 }
 
-main>* {
-    animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -191,11 +175,22 @@ $gap: 20px;
     }
 }
 
+main.scrollytelling-wrapper {
+    position: relative;
+    overflow-x: hidden;
+    height: 3000px;
+
+    .page-content {
+        position: relative;
+        z-index: 0;
+    }
+}
+
 .page-wrapper {
     .page-navigator-wrapper {
         position: fixed;
         height: 100vh;
-        z-index: 1;
+        z-index: 10;
 
         .navigator-toggle {
             width: 40px;
@@ -323,7 +318,10 @@ $gap: 20px;
 
         &.jumbotron {
             background-color: #333;
-            position: relative;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            display: flex;
 
             #three-container {
                 position: absolute;
@@ -332,6 +330,11 @@ $gap: 20px;
                 width: 100%;
                 height: 100%;
                 z-index: 0;
+            }
+
+            canvas {
+                position: absolute;
+                inset: 0;
             }
 
             .hover-image {
@@ -347,15 +350,45 @@ $gap: 20px;
 
         &.about-me {
             background-image: url($theBaseUrl + "wp-content/uploads/brickBackground.png"); // brickBackground
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            opacity: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
         }
 
         &.portfolio-projects-parallax,
         &.portfolio-projects {
             background-color: #fff;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            overflow-y: scroll;
+            opacity: 0;
+            pointer-events: none;
         }
 
         &.cv-wrapper.cv-contact-details {
             background-color: #d8dfea;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            opacity: 0;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+        }
+
+        &.cv-wrapper:not(.cv-contact-details) {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            opacity: 0;
+            pointer-events: none;
         }
 
         >div {
@@ -445,7 +478,7 @@ $gap: 20px;
             gap: 20px;
             align-items: center;
             margin-bottom: 10px;
-            font-size: 1.5rem;
+            font-size: 3.5rem;
 
             #tech-text {
                 font-weight: 600;
@@ -453,7 +486,7 @@ $gap: 20px;
                 padding: 10px;
                 border-radius: 8px;
                 //width: 200px;
-                height: 40px;
+                height: 80px;
             }
         }
 
@@ -902,12 +935,23 @@ $gap: 20px;
                     align-items: center;
                     justify-content: center;
                     white-space: nowrap;
-                    background: #007bff;
-                    color: #fff;
                     font-size: 11pt;
                     padding: 5px 10px;
                     border-radius: 5px;
                     height: 30px;
+                    color: #fff;
+
+                    &.beginner-item {
+                        background-color: #ffae00;
+                    }
+
+                    &.intermediate-item {
+                        background-color: #007bff;
+                    }
+
+                    &.expert-item {
+                        background-color: #28a745;
+                    }
                 }
             }
         }
@@ -1372,4 +1416,41 @@ $gap: 20px;
             }
         }
     }
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.animation-delay1 {
+    animation-delay: 0.5s;
+}
+
+.animation-delay2 {
+    animation-delay: 1.0s;
+}
+
+.animation-delay3 {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CURSOR GLOW */
+.cursor-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.35), transparent 40%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 0;
 }

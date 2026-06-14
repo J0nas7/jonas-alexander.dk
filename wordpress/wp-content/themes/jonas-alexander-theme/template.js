@@ -1,4 +1,232 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".scrollytelling-wrapper");
+
+    window.addEventListener("scroll", () => {
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        const progress = Math.min(
+            Math.max((windowHeight - rect.top) / (rect.height), 0),
+            1
+        );
+
+        const scrollY = window.scrollY;
+
+        console.log(`ScrollY: ${scrollY}, Progress: ${progress.toFixed(2)}`);
+
+        animate(progress, scrollY);
+    });
+
+    const jumbotron = document.querySelector(".page-content.jumbotron");
+    const ilovecoding = document.querySelector(".page-content.about-me");
+    const projects = document.querySelector(".page-content.portfolio-projects");
+    const contactdetails = document.querySelector(".page-content.cv-wrapper.cv-contact-details");
+    const interestsTechstack = document.querySelector(".page-content.cv-wrapper:not(.cv-contact-details)");
+
+    function clamp(val, min, max) {
+        return Math.max(min, Math.min(max, val));
+    }
+
+    function rangeProgress(scrollY, start, end) {
+        return clamp((scrollY - start) / (end - start), 0, 1);
+    }
+
+    function animate(progress, scrollY) {
+        // --- JUMBOTRON (0 → 400)
+        const jOpacity = 1 - rangeProgress(scrollY, 0, 400);
+        jumbotron.style.opacity = jOpacity;
+
+        // --- ILOVECODING (500 → 1000)
+        const iIn = rangeProgress(scrollY, 500, 600);
+        const iOut = rangeProgress(scrollY, 900, 1000);
+        let t = (scrollY - 500) / 100;
+        ilovecoding.style.opacity = iIn * (1 - iOut);
+        ilovecoding.style.pointerEvents = t > 0.01 ? "auto" : "none";
+
+        // --- PROJECTS (1000 → 1500)
+        const visible = scrollY >= 1000 && scrollY <= 1500;
+        projects.style.opacity = visible ? 1 : 0;
+        projects.style.pointerEvents = visible ? "auto" : "none";
+
+        // --- CONTACT DETAILS (1500 → 2500)
+        const cIn = rangeProgress(scrollY, 1500, 1600);
+        const cOut = rangeProgress(scrollY, 2500, 2700);
+        t = (scrollY - 1500) / 100;
+        contactdetails.style.opacity = cIn * (1 - cOut);
+        contactdetails.style.pointerEvents = t > 0.01 ? "auto" : "none";
+
+        // --- INTERESTS/TECHSTACK (2600 → 4000)
+        const sIn = rangeProgress(scrollY, 2600, 2700);
+        const sOut = rangeProgress(scrollY, 4000, 4200);
+        t = (scrollY - 2600) / 100;
+        interestsTechstack.style.opacity = sIn * (1 - sOut);
+        interestsTechstack.style.pointerEvents = t > 0.01 ? "auto" : "none";
+    }
+
+    // Expose goToScene globally for navigation clicks
+    window.goToScene = function (name) {
+        const positions = {
+            jonas: 0,
+            ilovecoding: 600,
+            projects: 1000,
+            contactinfo: 1500,
+            intereststechstack: 2600
+        };
+
+        const target = positions[name];
+
+        if (typeof target === "number") {
+            window.scrollTo({
+                top: target,
+                behavior: "smooth"
+            });
+        }
+    };
+});
+
+// Particle animation on jumbotron
+document.addEventListener("DOMContentLoaded", function () {
+    const canvas = document.getElementById("particleCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+    const particleCount = 360;
+
+    const mouse = {
+        x: null,
+        y: null,
+        radius: 120
+    };
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    // Track mouse on jumbotron
+    document.querySelector(".page-content.jumbotron").addEventListener("mousemove", (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+    });
+
+    document.querySelector(".page-content.jumbotron").addEventListener("mouseleave", () => {
+        mouse.x = null;
+        mouse.y = null;
+    });
+
+    // Particle class
+    class Particle {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+
+            this.baseX = this.x;
+            this.baseY = this.y;
+
+            this.size = Math.random() * 2 + 1;
+            this.vx = 0;
+            this.vy = 0;
+        }
+
+        update() {
+            // Distance to mouse
+            if (mouse.x !== null) {
+                let dx = this.x - mouse.x;
+                let dy = this.y - mouse.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < mouse.radius) {
+                    let force = (mouse.radius - distance) / mouse.radius;
+                    let angle = Math.atan2(dy, dx);
+
+                    this.vx += Math.cos(angle) * force * 2;
+                    this.vy += Math.sin(angle) * force * 2;
+                }
+            }
+
+            // 🌊 VERY gentle pull back to base (reduced a lot)
+            this.vx += (this.baseX - this.x) * 0.002;
+            this.vy += (this.baseY - this.y) * 0.002;
+
+            // ✨ Slow drifting motion (the key part)
+            this.vx += (Math.random() - 0.5) * 0.035;
+            this.vy += (Math.random() - 0.5) * 0.035;
+
+            // Smooth it out
+            this.vx *= 0.96;
+            this.vy *= 0.96;
+
+            this.x += this.vx;
+            this.y += this.vy;
+        }
+
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = "#38bdf8";
+            ctx.fill();
+        }
+    }
+
+    // Init particles
+    function init() {
+        particles = [];
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+    }
+    init();
+
+    // Animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let p of particles) {
+            p.update();
+            p.draw();
+        }
+
+        requestAnimationFrame(animate);
+    }
+    animate();
+});
+
+// Cursor glow effect
+document.addEventListener("DOMContentLoaded", function () {
+    // 🌟 CURSOR GLOW (mikrointeraktion)
+    const glow = document.createElement("div");
+    glow.classList.add("cursor-glow");
+    document.body.appendChild(glow);
+
+    document.addEventListener("mousemove", (e) => {
+        glow.style.left = e.clientX + "px";
+        glow.style.top = e.clientY + "px";
+    });
+});
+
+// Magnetic hover effect
+document.addEventListener("DOMContentLoaded", function () {
+    const magnets = document.querySelectorAll(".magnetic");
+
+    magnets.forEach(el => {
+        el.addEventListener("mousemove", e => {
+            const rect = el.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+        });
+
+        el.addEventListener("mouseleave", () => {
+            el.style.transform = `translate(0,0)`;
+        });
+    });
+});
+
+// Pause carousel animation on hover
+document.addEventListener("DOMContentLoaded", function () {
     const interestsContainer = document.querySelector('.interests-carousel-inner');
     if (!interestsContainer) return
 
@@ -10,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Three.js particle system in jumbotron
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Portfolio Loaded!");
 
@@ -91,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// Image tilt effect on hover
 document.querySelectorAll('.image-container').forEach(container => {
     const image = container.querySelector('.hover-image');
 
@@ -111,6 +341,7 @@ document.querySelectorAll('.image-container').forEach(container => {
     });
 });
 
+// Wrap each letter in .jump-letters with a span for individual animation
 document.querySelectorAll('.jump-letters').forEach(element => {
     element.innerHTML = element.textContent.split('').map(letter => {
         if (letter === ' ') {
@@ -120,6 +351,7 @@ document.querySelectorAll('.jump-letters').forEach(element => {
     }).join('');
 });
 
+// Utility function to check if an element is in the viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
 
@@ -183,6 +415,7 @@ function getRandomInt(min, max) {
 const letters = document.querySelectorAll('.i-am-jonas .letter:not(.space)');
 let activeIndex = null;
 
+// Function to pick a random letter and add the 'active' class
 function pickRandomLetter() {
     // Remove the 'active' class from the currently active letter, if any
     if (activeIndex !== null) {
@@ -208,22 +441,21 @@ setInterval(pickRandomLetter, 1000);
 // Initial call to set an active letter immediately
 pickRandomLetter();
 
+// Tech text rotator with letter-by-letter animation
 function TechTextRotator() {
     const searchTerms = [
-        "PHP",
-        "Laravel",
+        "C# || PHP",
+        ".NET || Laravel",
         "React/Next.js",
         "TypeScript",
-        "SQLite",
-        "PostgreSQL",
         "React Native",
+        "Redis",
+        "Elasticsearch",
         "Redux",
         "Tailwind & SCSS",
-        "Node.js",
-        "REST API",
     ];
 
-    let displayedText = "PHP"; // Initial displayed text
+    let displayedText = "C# || PHP"; // Initial displayed text
     let currentIndex = 0;                // Start index
     let isSwitching = false;
     const displayElement = document.getElementById("tech-text");
@@ -303,6 +535,9 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(updateLines);
 });
 
+// Adds the 'animate' class to each .slide-fade-wrapper
+// when it is near the center of the lower half of the viewport,
+// creating a staggered fade-in effect as the user scrolls down
 document.addEventListener('DOMContentLoaded', function () {
     const wrappers = document.querySelectorAll('.slide-fade-wrapper');
 

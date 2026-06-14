@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
 <header>
-    <nav class="page-navigator-wrapper" aria-label="Page navigation">
+    <nav class="page-navigator-wrapper" aria-label="Page navigation" style="display: none;">
         <button class="navigator-toggle" aria-controls="page-navigator-menu" aria-expanded="false" aria-label="Open navigation menu">≡</button>
         <div class="page-navigator" id="page-navigator-menu">
             <input type="checkbox" id="navigator-toggle" style="display:none;" aria-hidden="true" tabindex="-1" />
@@ -18,7 +18,7 @@
                     <a href="#jonas" aria-label="I am Jonas Sørensen">Jonas Sørensen</a>
                 </li>
                 <li>
-                    <a href="#ilovecoding" aria-label="Technologies I love coding">I love coding</a>
+                    <a onclick="goToScene('ilovecoding')" aria-label="Technologies I love coding">I love coding</a>
                     <img
                         src="/wp-content/uploads/coding.png"
                         alt="Picture of a floating code tag"
@@ -94,11 +94,12 @@
     </nav>
 </header>
 
-<main>
+<main class="scrollytelling-wrapper">
     <section class="page-content jumbotron" id="jonas">
-        <div id="three-container"></div>
+        <!-- <div id="three-container"></div> -->
+        <canvas id="particleCanvas" class="fade-up animation-delay3"></canvas>
         <div class="my-short-info-grid">
-            <figure class="info-grid">
+            <figure class="info-grid fade-up animation-delay1">
                 <div class="my-picture-wrapper">
                     <a
                         href="/wp-content/uploads/jonas-1.jpg"
@@ -112,7 +113,7 @@
                     </a>
                 </div>
             </figure>
-            <div class="info-grid details">
+            <div class="info-grid details fade-up animation-delay2">
                 <div class="i-am-jonas">
                     <span class="my-name jump-letters" aria-label="My name is">My name is</span>
                     <h1 class="my-name jump-letters" aria-label="Jonas Sørensen">Jonas Sørensen</h1>
@@ -190,7 +191,7 @@
         <h3 class="my-projects" style="color: white;">Look at my portfolio projects:</h3>
         <div class="projects-wrapper" style="clear: left;">
             <div class="projects-group">
-                <h3 class="projects-group-title" id="fullstack">
+                <h3 class="projects-group-title magnetic" id="fullstack">
                     <div class="text-reveal-line">
                         <div class=" text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Highlighted</div>
@@ -221,7 +222,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="Booohking - Simple Booking System"
                             src="/wp-content/uploads/references/booohking.png" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/booohking-booking-system"
@@ -241,7 +242,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="GiveOrTake - Project Management & Time Tracking"
                             src="/wp-content/uploads/references/giveortake-project-time.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/giveortake-project-management-time-tracking"
@@ -264,7 +265,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="CasaNova - Property Listing Marketplace"
                             src="/wp-content/uploads/references/casanova-property-listing.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/casanova-property-listing-platform"
@@ -286,7 +287,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="CRM system for a IOT-company"
                             src="/wp-content/uploads/references/safelii-crm.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/base2sale-crm-system"
@@ -305,7 +306,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="YourSpace - Slack/Discord Clone"
                             src="/wp-content/uploads/references/yourspace-rocket.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/yourspace-slack-discord-clone"
@@ -327,7 +328,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="SEObetter - Website Analytics & SEO Optimization Platform"
                             src="/wp-content/uploads/references/seobetter.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/seobetter-website-analytics-seo-optimization"
@@ -345,7 +346,7 @@
                 </div>
             </div>
             <div class="projects-group">
-                <h3 class="projects-group-title" id="mobileapps">
+                <h3 class="projects-group-title magnetic" id="mobileapps">
                     <div class="text-reveal-line">
                         <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Highlighted</div>
@@ -376,7 +377,7 @@
                         <img decoding="async" loading="lazy" class=" parallax-image"
                             alt="Funler Messaging"
                             src="/wp-content/uploads/references/funler-app.png" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/funler-messaging"
@@ -396,7 +397,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="IOT App"
                             src="/wp-content/uploads/references/safelii-app-2.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/iot-sos-app"
@@ -413,7 +414,7 @@
                 </div>
             </div>
             <div class="projects-group">
-                <h3 class="projects-group-title" id="wordpress">
+                <h3 class="projects-group-title magnetic" id="wordpress">
                     <div class="text-reveal-line">
                         <div class="text-reveal-line-wrapper" aria-hidden="true">
                             <div class="text-huge text-lighter">Highlighted</div>
@@ -460,7 +461,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="Allingbjerggaard - Responsive WooCommmerce farmshop"
                             src="/wp-content/uploads/references/allingbjerggaard-0.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/allingbjerggaard"
@@ -482,7 +483,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="Go @ Netto - REMA 1000 Vigo Webshop Clone"
                             src="/wp-content/uploads/references/rema-vigo-gonetto.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/gonetto"
@@ -503,7 +504,7 @@
                         <img decoding="async" loading="lazy" class="parallax-image"
                             alt="Happy with my bike - Responsive WC webshop"
                             src="/wp-content/uploads/references/happy-0.jpg" />
-                        <div class="projects-group-item-description">
+                        <div class="projects-group-item-description magnetic">
                             <h4 class="projects-group-item-title">
                                 <a
                                     href="/happy-with-my-bike"
@@ -525,11 +526,11 @@
     <section class="page-content cv-wrapper cv-contact-details" id="contactinfo">
         <div class="my-picture-and-contact-info">
             <div class="my-picture-wrapper-2">
-                <img decoding="async" loading="lazy" class="the-picture"
+                <img decoding="async" loading="lazy" class="the-picture magnetic"
                     alt="My picture"
                     src="/wp-content/uploads/jonas-library.jpg" />
             </div>
-            <div class="my-contact-info">
+            <div class="my-contact-info magnetic">
                 <div>
                     <p class="c30">
                         <span class="c37 c28 c34 c49">Jonas Alexander Sørensen</span><br />
@@ -567,374 +568,23 @@
                             src="/wp-content/uploads/linkedin-icon.png" />
                         <span class="c23 c35"><a class="c3"
                                 href="https://www.linkedin.com/in/jonas-alexander-sørensen-92840495/" target="_blank"
-                                rel="noopener" aria-label="Visit my LinkedIn Profile">jonas-alexander-sørensen-92840495</a></span>
+                                rel="noopener" aria-label="Visit my LinkedIn Profile">LinkedIn/jonas-alexander-...</a></span>
+                    </div>
+                    <div>
+                        <span style="font-size: 8.5pt;">
+                            Read about my working experience and my educations on my LinkedIn profile
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <article class="page-content cv-wrapper working-experience" id="work">
-        <h1 class="working-headline">
-            <div class="text-reveal-line">
-                <div class="text-reveal-line-wrapper" aria-hidden="true">
-                    <div class="text-huge text-lighter">Working</div>
-                </div>
-                <div class="text-reveal-hover-wrapper" style="width: 100%;">
-                    <div class="text-huge">Working</div>
-                </div>
-            </div>
-            <div class="text-reveal-line">
-                <div class="text-reveal-line-wrapper" aria-hidden="true">
-                    <div class="text-huge text-lighter">Experience</div>
-                </div>
-                <div class="text-reveal-hover-wrapper" style="width: 100%;">
-                    <div class="text-huge">Experience</div>
-                </div>
-            </div>
-        </h1>
-        <div class="work-history">
-            <div class="work-history-left">
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Freelance React Native Developer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">Funler ApS</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Nov. 2024 - mar. 2025</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Freelance, Remote</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">React Native</li>
-                            <li class="work-skills-item">TypeScript</li>
-                            <li class="work-skills-item">Jest</li>
-                            <li class="work-skills-item">Redux</li>
-                            <li class="work-skills-item">Material Design</li>
-                            <li class="work-skills-item">Styled Components</li>
-                            <li class="work-skills-item">JSON</li>
-                            <li class="work-skills-item">JWT</li>
-                            <li class="work-skills-item">REST</li>
-                            <li class="work-skills-item">GitHub Actions</li>
-                            <li class="work-skills-item">Firebase Messaging</li>
-                            <li class="work-skills-item">Firebase App Distribution</li>
-                            <li class="work-skills-item">Google Auth</li>
-                            <li class="work-skills-item">Facebook Auth</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14">
-                                As a freelance mobile app engineer for Funler ApS, I have been responsible for developing and
-                                deploying the Funler Messaging App (versions 0.1 and 0.2) for iOS and Android.<br />
-                                My role includes building scalable and responsive features using React Native, TypeScript,
-                                Redux, and Styled
-                                Components, ensuring a smooth and engaging user experience.<br /><br />
-
-                                I have also integrated Firebase Messaging, Google & Facebook Authentication, and GitHub Actions
-                                for CI/CD automation.<br />
-                                Additionally, I have worked with JWT authentication, RESTful APIs, and
-                                Firebase App Distribution to streamline the deployment process.
-                            </span>
-                        </p>
-                        <p class="c7">
-                            <span class="c16 c0"></span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Full-stack Developer & Mobile App Engineer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">IOT-company, Frederiksberg</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Jan. 2024 - Mar. 2025</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Full-time</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">Laravel</li>
-                            <li class="work-skills-item">NoSQL</li>
-                            <li class="work-skills-item">Blade</li>
-                            <li class="work-skills-item">PHPUnit</li>
-                            <li class="work-skills-item">React</li>
-                            <li class="work-skills-item">Next.js</li>
-                            <li class="work-skills-item">TypeScript</li>
-                            <li class="work-skills-item">JWT</li>
-                            <li class="work-skills-item">Redux</li>
-                            <li class="work-skills-item">Jest</li>
-                            <li class="work-skills-item">Material Design</li>
-                            <li class="work-skills-item">Tailwind</li>
-                            <li class="work-skills-item">CSS Modules</li>
-                            <li class="work-skills-item">SCSS</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14">
-                                I have the task of modernizing an old Laravel program, which must be upgraded from PHP 5 to PHP
-                                8 and which must also be expanded with completely new features.<br>
-                                I am moving the frontend away from Laravel's built-in Blade template, to a separate reactive
-                                frontend built with Next.js.
-                                <br><br>
-                                Secondly I am extending the mobile app with new features, using SwiftUI in Xcode for iOS
-                                and afterwards using React Native for a hybrid-app.<br>
-                                The backend is built in Node.js using Express and Socket.io, hosted on Google Cloud.
-                            </span>
-                        </p>
-                        <p class="c7">
-                            <span class="c16 c0"></span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <div>
-                            <p class="c8 experience-title">
-                                <!-- <span class="level level-1">2</span> -->
-                                <span class="c28 c19">Sales Manager</span>
-                            </p>
-                            <p class="c10 clear-both">
-                                <span class="c21">Lidl, Vangedevej, Dyssegaard</span>
-                            </p>
-                            <p class="c10 experience-period">
-                                <span class="c21">May-sep. 2023</span>
-                            </p>
-                            <p class="c10 experience-type">
-                                <span class="c21">Full-time</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <!-- <div style="clear: both;margin-top: 100px;"> -->
-                        <p class="c8 experience-title">
-                            <!-- <span class="level level-1">3</span> -->
-                            <span class="c28 c19">Sales Manager</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">Netto, Frederikssundsvej, Kbh NV</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">May 2022 - jan. 2023</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Full-time</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="work-history-right">
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <!-- <span class="level level-1">4</span> -->
-                            <span class="c28 c19">Full Stack Developer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">Serento, Remote</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Aug-Oct. 2021</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Internship/Full-time</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">MySQL</li>
-                            <li class="work-skills-item">HTML/CSS</li>
-                            <li class="work-skills-item">SCSS</li>
-                            <li class="work-skills-item">JavaScript/jQuery</li>
-                            <li class="work-skills-item">Webpack</li>
-                            <li class="work-skills-item">Git/SourceTree</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14">During my web development PBA on the internship, I worked on developing a simple
-                                SEO analysis tool.</span>
-                        </p>
-                        <p class="c7"> </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Assistant Manager</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">Netto, Bagsværd Hovedgade</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Year 2021</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Full-time</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Founder&amp;Partner, Full-stack Developer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">SEObetter, Remote</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Jul. 2012 - Aug. 2021</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Part-time/Student</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">MySQL</li>
-                            <li class="work-skills-item">HTML/CSS</li>
-                            <li class="work-skills-item">JavaScript/jQuery</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14 c47">I developed a website analytics platform, learned a lot along the way, and
-                                started over at different points when I had learned something ground-breaking.</span>
-                        </p>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14 c47">The platform was reminiscent of and inspired by Google Analytics and
-                                Hotjar.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Frontend Developer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">HTML24, Kbh S.</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Aug - Nov. 2019</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Internship/Full-time</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">WP+WC</li>
-                            <li class="work-skills-item">ACF</li>
-                            <li class="work-skills-item">Docker+Gulp</li>
-                            <li class="work-skills-item">HTML/CSS</li>
-                            <li class="work-skills-item">SCSS/Stylus</li>
-                            <li class="work-skills-item">Bootstrap</li>
-                            <li class="work-skills-item">JavaScript/jQuery</li>
-                            <li class="work-skills-item">Git/SourceTree</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14 c47">During my computer science AP, I worked agile in a Scrum-like setup during the
-                                internship.</span>
-                        </p>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14 c47">There I contributed to an optimization of the Glyptotek's WordPress website
-                                and webshop.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Freelance Webdeveloper</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">Webdesigner 18, Remote</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">2015 - 2017</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Freelance/Ad-hoc</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">Joomla</li>
-                            <li class="work-skills-item">HTML/CSS</li>
-                            <li class="work-skills-item">JavaScript/jQuery</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Joomla Developer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">redWEB, Odense</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">Apr. 2011 - Jul. 2012</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Part-time/Student</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">Joomla</li>
-                            <li class="work-skills-item">HTML/CSS</li>
-                            <li class="work-skills-item">JavaScript/jQuery</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14">During my web developer EUD, I worked for a year and a half as a student Joomla
-                                CMS developer, where I contributed to approx. 6 new websites.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work-experience-list">
-                    <div>
-                        <p class="c8 experience-title">
-                            <span class="c28 c19">Full stack developer</span>
-                        </p>
-                        <p class="c10 clear-both">
-                            <span class="c21">Constant Solutions, Remote</span>
-                        </p>
-                        <p class="c10 experience-period">
-                            <span class="c21">2009 - 2013</span>
-                        </p>
-                        <p class="c10 experience-type">
-                            <span class="c21">Freelance/Ad-hoc</span>
-                        </p>
-                        <ul class="c10 experience-skillset">
-                            <li class="work-skills-item">PHP</li>
-                            <li class="work-skills-item">MySQL</li>
-                            <li class="work-skills-item">HTML/CSS</li>
-                            <li class="work-skills-item">JavaScript/jQuery</li>
-                        </ul>
-                        <p class="c10" style="clear: left;">
-                            <span class="c14">I collaborated for a number of years with an independent developer, where I was
-                                given tasks on an ad-hoc basis.</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
-
     <article class="wp-block-group page-content cv-wrapper">
         <div class="interests-techstack-educations-wrapper">
             <div class="interests-techstack-container">
                 <div class="interests">
-                    <h3 class="c38" id="interests">
+                    <h3 class="c38 magnetic" id="interests">
                         <div class="text-reveal-line">
                             <div class="text-reveal-line-wrapper" aria-hidden="true">
                                 <div class="text-huge text-lighter">Interests</div>
@@ -971,7 +621,7 @@
                     </div>
                 </div>
                 <div class="techstack">
-                    <h3 class="c38" id="codingskills">
+                    <h3 class="c38 magnetic" id="codingskills">
                         <div class="text-reveal-line">
                             <div class="text-reveal-line-wrapper" aria-hidden="true">
                                 <div class="text-huge text-lighter">Coding</div>
@@ -989,206 +639,90 @@
                             </div>
                         </div>
                     </h3>
+
+                    <div class="techstack-group">
+                        <span class="magnetic techstack-item beginner-item">Beginner</span>
+                        <span class="magnetic techstack-item intermediate-item">Intermediate</span>
+                        <span class="magnetic techstack-item expert-item">Expert</span>
+                    </div>
+
                     <strong>Backend</strong>
                     <div class="techstack-group">
-                        <span class="techstack-item">PHP</span>
-                        <span class="techstack-item">Laravel</span>
-                        <span class="techstack-item">JSON</span>
-                        <span class="techstack-item">JWT</span>
-                        <span class="techstack-item">Redis</span>
+                        <span class="magnetic techstack-item beginner-item">Node.js/NestJS</span>
+                        <span class="magnetic techstack-item intermediate-item">C#/.NET</span>
+                        <span class="magnetic techstack-item expert-item">PHP/Laravel</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">WordPress</span>
-                        <span class="techstack-item">ACF</span>
-                        <span class="techstack-item">WooCommerce</span>
+                        <span class="magnetic techstack-item beginner-item">ElasticSearch</span>
+                        <span class="magnetic techstack-item expert-item">JSON</span>
+                        <span class="magnetic techstack-item expert-item">JWT</span>
+                        <span class="magnetic techstack-item expert-item">Redis</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">Node.js</span>
-                        <span class="techstack-item">Express</span>
-                        <span class="techstack-item">Prisma</span>
-                        <span class="techstack-item">Socket</span>
+                        <span class="magnetic techstack-item expert-item">WordPress</span>
+                        <span class="magnetic techstack-item expert-item">Advanced Custom Fields</span>
+                        <span class="magnetic techstack-item expert-item">WooCommerce</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">MySQL</span>
-                        <span class="techstack-item">SQLite</span>
-                        <span class="techstack-item">PostgreSQL</span>
+                        <span class="magnetic techstack-item beginner-item">Express</span>
+                        <span class="magnetic techstack-item beginner-item">Prisma</span>
+                        <span class="magnetic techstack-item beginner-item">Socket</span>
+                    </div>
+                    <div class="techstack-group">
+                        <span class="magnetic techstack-item expert-item">MySQL</span>
+                        <span class="magnetic techstack-item intermediate-item">SQLite</span>
+                        <span class="magnetic techstack-item beginner-item">PostgreSQL</span>
                     </div>
                     <strong>Frontend</strong>
                     <div class="techstack-group">
-                        <span class="techstack-item">TypeScript</span>
-                        <span class="techstack-item">React.js</span>
-                        <span class="techstack-item">Next.js</span>
+                        <span class="magnetic techstack-item expert-item">TypeScript</span>
+                        <span class="magnetic techstack-item expert-item">React.js</span>
+                        <span class="magnetic techstack-item expert-item">Next.js</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">React Native</span>
-                        <span class="techstack-item">Redux</span>
-                        <span class="techstack-item">useContext</span>
+                        <span class="magnetic techstack-item intermediate-item">React Native</span>
+                        <span class="magnetic techstack-item intermediate-item">SwiftUI</span>
+                        <span class="magnetic techstack-item beginner-item">Expo</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">Axios</span>
-                        <span class="techstack-item">TanStack Query</span>
+                        <span class="magnetic techstack-item expert-item">Redux</span>
+                        <span class="magnetic techstack-item expert-item">React Context</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">Formik</span>
-                        <span class="techstack-item">Tailwind</span>
-                        <span class="techstack-item">SCSS Modules</span>
+                        <span class="magnetic techstack-item expert-item">Axios</span>
+                        <span class="magnetic techstack-item expert-item">TanStack Query</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">Styled Components</span>
-                        <span class="techstack-item">Material Design</span>
+                        <span class="magnetic techstack-item intermediate-item">Formik</span>
+                        <span class="magnetic techstack-item expert-item">Tailwind</span>
+                        <span class="magnetic techstack-item expert-item">SCSS Modules</span>
+                    </div>
+                    <div class="techstack-group">
+                        <span class="magnetic techstack-item expert-item">Styled Components</span>
+                        <span class="magnetic techstack-item beginner-item">Material Design</span>
                     </div>
                     <strong>DevOps</strong>
                     <div class="techstack-group">
-                        <span class="techstack-item">PHPUnit</span>
-                        <span class="techstack-item">Jest</span>
-                        <span class="techstack-item">Github Actions</span>
+                        <span class="magnetic techstack-item beginner-item">xUnit</span>
+                        <span class="magnetic techstack-item expert-item">PHPUnit</span>
+                        <span class="magnetic techstack-item expert-item">Jest</span>
+                        <span class="magnetic techstack-item intermediate-item">Cypress</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">Google Cloud</span>
-                        <span class="techstack-item">Firebase</span>
-                        <span class="techstack-item">Supabase</span>
+                        <span class="magnetic techstack-item expert-item">Github Actions</span>
+                        <span class="magnetic techstack-item intermediate-item">Terraform</span>
                     </div>
                     <div class="techstack-group">
-                        <span class="techstack-item">Docker</span>
-                        <span class="techstack-item">Scaleway</span>
-                        <span class="techstack-item">DNS</span>
-                        <span class="techstack-item">Terraform</span>
+                        <span class="magnetic techstack-item intermediate-item">Google Cloud</span>
+                        <span class="magnetic techstack-item expert-item">Firebase</span>
+                        <span class="magnetic techstack-item beginner-item">Supabase</span>
+                    </div>
+                    <div class="techstack-group">
+                        <span class="magnetic techstack-item intermediate-item">Docker</span>
+                        <span class="magnetic techstack-item beginner-item">Scaleway</span>
+                        <span class="magnetic techstack-item beginner-item">DNS</span>
                     </div>
                 </div>
-            </div>
-            <h3 id="h.39j0ues6x9x2" class="c38">
-                <div class="text-reveal-line">
-                    <div class="text-reveal-line-wrapper" aria-hidden="true">
-                        <div class="text-huge text-lighter">Educations</div>
-                    </div>
-                    <div class="text-reveal-hover-wrapper" style="width: 100%;">
-                        <div class="text-huge">Educations</div>
-                    </div>
-                </div>
-            </h3>
-            <div class="educations-and-skills" id="educations">
-                <!-- <div class="educations-list"> -->
-                <!-- <div> -->
-                <div class="education-list-item">
-                    <p class="c10" style="margin-top: 10px"><span class="c16 c25 c19">Bachelor of Web Development</span></p>
-                    <p class="c8"><span class="c21">Sep. 2020 - Jan. 2022</span></p>
-                    <p class="c10"><span class="c2">Copenhagen Business Academy</span></p>
-                    <p class="c10"><span class="c2">2800 Kgs. Lyngby</span></p>
-                    <p class="c10"><i class="c25 c14">
-                            Gained knowledge and skills in various aspects of web development, including both frontend and
-                            backend technologies. Achieved good grades in programming courses.
-                        </i></p>
-                </div>
-                <div class="education-list-item">
-                    <p class="c10" style="margin-top: 10px"><span class="c16 c25 c19">Computer Science</span></p>
-                    <p class="c8"><span class="c21">Aug. 2017 - Jan. 2020</span></p>
-                    <p class="c10"><span class="c2">Københavns EA</span></p>
-                    <p class="c10"><span class="c2">2400 Copenhagen NW</span></p>
-                    <p class="c10"><i class="c25 c14">
-                            Learned foundational concepts of computer science, including algorithms, data structures, and
-                            object-oriented programming.
-                        </i></p>
-                </div>
-                <div class="education-list-item">
-                    <p class="c10" style="margin-top: 10px"><span class="c28 c19">High School</span></p>
-                    <p class="c8"><span class="c21">Jan. 2013 - Feb. 2016</span></p>
-                    <p class="c10"><span class="c2">Copenhagen VUC</span></p>
-                    <p class="c10"><span class="c2">1165 Copenhagen K</span></p>
-                </div>
-                <div class="education-list-item">
-                    <p class="c10" style="margin-top: 10px"><span class="c28 c19">Web-developer</span></p>
-                    <p class="c8"><span class="c21">Jan. 2011 - Jul. 2012</span></p>
-                    <p class="c10"><span class="c2">Southern Danish Business School</span></p>
-                    <p class="c10"><span class="c2">5230 Odense</span></p>
-                </div>
-                <div class="education-list-item">
-                    <p class="c10" style="margin-top: 10px"><span class="c19 c28">Computer Technician Basic Course</span>
-                    </p>
-                    <p class="c8"><span class="c21">Aug. 2010 - Dec. 2010</span></p>
-                    <p class="c10"><span class="c2">Zealand Business College</span></p>
-                    <p class="c10"><span class="c2">4100 Ringsted</span></p>
-                </div>
-                <div class="education-list-item">
-                    <p class="c10" style="margin-top: 10px"><span class="c28 c19">Elementary School</span></p>
-                    <p class="c8"><span class="c21">2008 - 2010</span></p>
-                    <p class="c10"><span class="c2">Pederstrup Efterskole</span></p>
-                    <p class="c10"><span class="c28 c34">4943 Torrig L</span></p>
-                </div>
-                <!-- </div> -->
-                <!-- </div> -->
-                <!--<div class="skills-list">
-                    <div>
-                        <h1 id="h.e8omzpmjsbi" class="c38">Developer<span class="c34 c43">-</span>skills</h1>
-                        <p class="c8"><span class="c16 c31 c19">Levels are between:</span></p>
-                        <p class="c8" style="clear: both;margin-bottom: 6px;"><span class="level level-1">1</span><span
-                                class="c22">Beginner</span></p>
-                        <p class="c8" style="clear: both;margin-bottom: 6px;"><span class="level level-2">2</span><span
-                                class="c22">Good knowledge</span></p>
-                        <p class="c8" style="clear: both;margin-bottom: 6px;"><span class="level level-3">3</span><span
-                                class="c22">Skilled</span></p>
-                        <p class="c8" style="clear: both;margin-bottom: 6px;"><span class="level level-4">4</span><span
-                                class="c22">Experienced</span></p>
-                        <p class="c8" style="clear: both;margin-bottom: 6px;"><span class="level level-5">5</span><span
-                                class="c22">Very experienced</span></p>
-                        <p class="c7"> </p>
-                        <div class="skills-category-title">Programming:</div>
-                        <div class="skills-grid"><span class="skills-item"> <span class="level level-5">5</span>PHP </span>
-                            <span class="skills-item"> <span class="level level-3">3</span>Laravel </span> <span
-                                class="skills-item"> <span class="level level-2">2</span>Python </span> <span
-                                class="skills-item"> <span class="level level-3">3</span>Java </span> <span class="skills-item">
-                                <span class="level level-3">3</span>Spring Boot </span> <span class="skills-item"> <span
-                                    class="level level-2">2</span>C#/.NET </span>
-                        </div>
-                        <div class="skills-category-title">Databases:</div>
-                        <div class="skills-grid"><span class="skills-item"> <span class="level level-5">5</span>MySQL </span>
-                            <span class="skills-item"> <span class="level level-4">4</span>NoSQL </span> <span
-                                class="skills-item"> <span class="level level-1">1</span>GraphQL </span> <span
-                                class="skills-item" style="grid-column: span 2 / span 2;"> <span
-                                    class="level level-3">3</span>Firebase & Firestore </span> <span class="skills-item"> <span
-                                    class="level level-3">3</span>Eloquent </span> <span class="skills-item"
-                                style="grid-column: span 2 / span 2;"> <span class="level level-1">1</span>Prisma schema </span>
-                        </div>
-                        <div class="skills-category-title">JavaScript:</div>
-                        <div class="skills-grid"><span class="skills-item"> <span class="level level-5">5</span>JavaScript
-                            </span> <span class="skills-item"> <span class="level level-3">3</span>TypeScript </span> <span
-                                class="skills-item"> <span class="level level-5">5</span>jQuery </span> <span
-                                class="skills-item" style="grid-column: span 2 / span 2;"> <span
-                                    class="level level-4">4</span>React/Next.js </span> <span class="skills-item"> <span
-                                    class="level level-2">2</span>Vue </span> <span class="skills-item"> <span
-                                    class="level level-3">3</span>Redux </span> <span class="skills-item"> <span
-                                    class="level level-4">4</span>JSX </span> <span class="skills-item"> <span
-                                    class="level level-1">1</span>Angular </span></div>
-                        <div class="skills-category-title">Frontend:</div>
-                        <div class="skills-grid"><span class="skills-item"> <span class="level level-5">5</span>HTML </span>
-                            <span class="skills-item"> <span class="level level-5">5</span>CSS </span> <span
-                                class="skills-item"> <span class="level level-4">4</span>SCSS </span> <span class="skills-item"
-                                style="grid-column: span 2 / span 2;"> <span class="level level-4">4</span>Tailwind CSS </span>
-                            <span class="skills-item"> <span class="level level-1">1</span>Bootstrap </span> <span
-                                class="skills-item" style="grid-column: span 2 / span 2;"> <span
-                                    class="level level-1">1</span>Material Design </span>
-                        </div>
-                        <div class="skills-category-title">CMS:</div>
-                        <div class="skills-grid"><span class="skills-item" style="grid-column: span 3 / span 3;"> <span
-                                    class="level level-4">4</span>WordPress + ACF + WooCommerce </span> <span
-                                class="skills-item" style="grid-column: span 3 / span 3;"> <span
-                                    class="level level-4">4</span>Joomla! CMS </span> <span class="skills-item"
-                                style="grid-column: span 3 / span 3;"> <span class="level level-2">2</span>Headless WordPress
-                            </span></div>
-                        <div class="skills-category-title">Webshop-related:</div>
-                        <div class="skills-grid"><span class="skills-item" style="grid-column: span 3 / span 3;"> <span
-                                    class="level level-2">2</span>ShipMondo freight-handling </span> <span class="skills-item"
-                                style="grid-column: span 3 / span 3;"> <span class="level level-3">3</span>QuickPay, Nets/DIBS
-                                payment-gateway </span></div>
-                        <div class="skills-category-title">DevOps:</div>
-                        <div class="skills-grid"><span class="skills-item" style="grid-column: span 3 / span 3;"> <span
-                                    class="level level-4">4</span>Git version control </span> <span class="skills-item"
-                                style="grid-column: span 3 / span 3;"> <span class="level level-4">4</span>Webpack/Gulp/NPM
-                            </span> <span class="skills-item" style="grid-column: span 3 / span 3;"> <span
-                                    class="level level-2">2</span>Jest, CI/CD, Github Actions </span> <span class="skills-item"
-                                style="grid-column: span 3 / span 3;"> <span class="level level-2">2</span>Docker, Composer
-                            </span></div>
-                    </div>
-                </div>-->
             </div>
         </div>
     </article>
