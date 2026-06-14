@@ -43,7 +43,10 @@ jobs:
           platforms: linux/amd64
 
       - name: Update Scaleway Serverless Container
-        run: scw container container update ${{ env.CONTAINER_ID }} registry-image=${{ env.IMAGE }}
+        run: |
+          scw container container update \
+            container-id=${{ env.CONTAINER_ID }} \
+            image=${{ env.IMAGE }}
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
