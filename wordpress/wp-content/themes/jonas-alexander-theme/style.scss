@@ -377,6 +377,7 @@ main.scrollytelling-wrapper {
             position: fixed;
             width: 100%;
             height: 100vh;
+            z-index: 1;
             opacity: 0;
             pointer-events: none;
             display: flex;
@@ -387,6 +388,8 @@ main.scrollytelling-wrapper {
             position: fixed;
             width: 100%;
             height: 100vh;
+            z-index: 1;
+            overflow-y: scroll;
             opacity: 0;
             pointer-events: none;
         }

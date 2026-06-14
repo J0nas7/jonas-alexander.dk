@@ -50,15 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // --- CONTACT DETAILS (1500 → 2500)
         const cIn = rangeProgress(scrollY, 1500, 1600);
-        const cOut = rangeProgress(scrollY, 2500, 2700);
+        const cOut = rangeProgress(scrollY, 1800, 1900);
         t = (scrollY - 1500) / 100;
         contactdetails.style.opacity = cIn * (1 - cOut);
         contactdetails.style.pointerEvents = t > 0.01 ? "auto" : "none";
 
-        // --- INTERESTS/TECHSTACK (2600 → 4000)
-        const sIn = rangeProgress(scrollY, 2600, 2700);
+        // --- INTERESTS/TECHSTACK (1900 → 4200)
+        const sIn = rangeProgress(scrollY, 1900, 2000);
         const sOut = rangeProgress(scrollY, 4000, 4200);
-        t = (scrollY - 2600) / 100;
+        t = (scrollY - 1900) / 100;
         interestsTechstack.style.opacity = sIn * (1 - sOut);
         interestsTechstack.style.pointerEvents = t > 0.01 ? "auto" : "none";
     }

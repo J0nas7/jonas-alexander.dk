@@ -18,7 +18,7 @@
                     <a href="#jonas" aria-label="I am Jonas Sørensen">Jonas Sørensen</a>
                 </li>
                 <li>
-                    <a onclick="goToScene('ilovecoding')" aria-label="Technologies I love coding">I love coding</a>
+                    <a onclick="goToScene('ilovecoding')" aria-label="Technologies I love coding">I ❤️ coding</a>
                     <img
                         src="/wp-content/uploads/coding.png"
                         alt="Picture of a floating code tag"
@@ -128,9 +128,10 @@
     <section class="page-content about-me" id="ilovecoding">
         <div class="about-me-inner">
             <div class="tech-text">
-                I love coding
+                I ❤️ Coding
                 <span id="tech-text"></span>
             </div>
+            <?php /*
             <h3 class="my-projects">
                 <span class="jump-letters">About </span>
                 <span class="jump-letters">me </span>
@@ -170,6 +171,7 @@
                         mobile app engineering, allowing me to build scalable, secure, and dynamic applications.</p>
                 </div>
             </div>
+            */ ?>
             <div class="clear-both"></div>
         </div>
     </section>
