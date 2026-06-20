@@ -65,23 +65,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Expose goToScene globally for navigation clicks
     window.goToScene = function (name) {
+        console.log(`Navigating to scene: ${name}`);
         const positions = {
             jonas: 0,
             ilovecoding: 600,
             projects: 1000,
-            contactinfo: 1500,
+            contactinfo: 1600,
             intereststechstack: 2600
         };
 
         const target = positions[name];
 
         if (typeof target === "number") {
-            window.scrollTo({
-                top: target,
-                behavior: "smooth"
-            });
+            smoothScrollTo(target, 2000); // 2 seconds scroll
         }
     };
+
+    function smoothScrollTo(targetY, duration = 2000) {
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        const startTime = performance.now();
+
+        function animate(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            // Ease-in-out
+            const eased =
+                progress < 0.5
+                    ? 2 * progress * progress
+                    : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+            window.scrollTo(0, startY + distance * eased);
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
 });
 
 // Particle animation on jumbotron
