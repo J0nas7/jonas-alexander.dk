@@ -85,16 +85,12 @@
         <div class="my-short-info-grid">
             <figure class="info-grid fade-up animation-delay1">
                 <div class="my-picture-wrapper">
-                    <a
-                        href="/wp-content/uploads/jonas-1.jpg"
-                        class="image-container"
-                        target="_blank"
-                        rel="noopener noreferrer">
+                    <span
+                        class="image-container">
                         <img decoding=" async" loading="lazy" class="hover-image"
                             alt="My Picture"
-                            src="/wp-content/uploads/jonas-1.png" />
-                        <span>AI-generated wax look-alike 🖼</span>
-                    </a>
+                            src="/wp-content/uploads/jonas-alexander.png" />
+                    </span>
                 </div>
             </figure>
             <div class="info-grid details fade-up animation-delay2">
