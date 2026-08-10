@@ -19,6 +19,7 @@ $projects = [
     'yourspace_project' => 'yourspace_project.php',
     'iot_sos_app_project' => 'iot_sos_app_project.php',
     'base2sale_crm_project' => 'base2sale_crm_project.php',
+    'communitylink_booking_project' => 'communitylink_booking_project.php',
     'funler_messaging_project' => 'funler_messaging_project.php',
     'allingbjerggaard_project' => 'allingbjerggaard_project.php',
     'go_netto_project' => 'go_netto_project.php',

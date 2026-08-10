@@ -202,6 +202,29 @@
                 <div class="projects-group-grid">
                     <div class="projects-group-item slide-fade-wrapper left">
                         <img decoding="async" loading="lazy" class="parallax-image"
+                            alt="CommunityLink - Volunteer & Activity Coordination Platform"
+                            src="/wp-content/uploads/references/communitylink-bookingsystem-coordination-of-volunteers-showcase-jumbotron.png" />
+                        <div class="projects-group-item-description magnetic">
+                            <h4 class="projects-group-item-title">
+                                <a
+                                    href="/communitylink-bookingsystem-coordination-of-volunteers"
+                                    target="_blank"
+                                    aria-label="Learn more about my latest job, a volunteer and activity coordination platform, called CommunityLink">
+                                    CommunityLink - Volunteer & Activity Coordination
+                                </a>
+                            </h4>
+                            <p>CommunityLink is a full-stack volunteer and activity coordination platform built with
+                                .NET 8, ASP.NET Core, Next.js, and TypeScript.<br />
+                                It enables organizations to create activities, match people based on interests, skills and availability,
+                                and manage assignments and participation.</p>
+                            <p>With smart communication, automated follow-ups, role-based access and support for email, SMS and push
+                                notifications, CommunityLink streamlines the entire coordination process.<br />
+                                The project showcases my ability to build scalable, data-driven platforms with complex business logic
+                                and asynchronous processing.</p>
+                        </div>
+                    </div>
+                    <div class="projects-group-item slide-fade-wrapper left">
+                        <img decoding="async" loading="lazy" class="parallax-image"
                             alt="Booohking - Simple Booking System"
                             src="/wp-content/uploads/references/booohking.png" />
                         <div class="projects-group-item-description magnetic">
@@ -646,6 +669,10 @@
                         <span class="magnetic techstack-item expert-item">WooCommerce</span>
                     </div>
                     <div class="techstack-group">
+                        <span class="magnetic techstack-item expert-item">SureSMS</span>
+                        <span class="magnetic techstack-item expert-item">Amazon S3/Object Storage</span>
+                    </div>
+                    <div class="techstack-group">
                         <span class="magnetic techstack-item beginner-item">Express</span>
                         <span class="magnetic techstack-item beginner-item">Prisma</span>
                         <span class="magnetic techstack-item beginner-item">Socket</span>
@@ -701,8 +728,9 @@
                     </div>
                     <div class="techstack-group">
                         <span class="magnetic techstack-item intermediate-item">Docker</span>
-                        <span class="magnetic techstack-item beginner-item">Scaleway</span>
-                        <span class="magnetic techstack-item beginner-item">DNS</span>
+                        <span class="magnetic techstack-item beginner-item">Kubernetes</span>
+                        <span class="magnetic techstack-item intermediate-item">Scaleway</span>
+                        <span class="magnetic techstack-item expert-item">DNS</span>
                     </div>
                 </div>
             </div>
