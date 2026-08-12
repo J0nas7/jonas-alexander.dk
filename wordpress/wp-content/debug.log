@@ -1838,3 +1838,245 @@ Stack trace:
 [11-Aug-2026 14:09:29 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
 [11-Aug-2026 14:09:29 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
 [11-Aug-2026 14:09:29 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:30:15 UTC] Automatic updates starting...
+[12-Aug-2026 13:30:15 UTC]   Automatic plugin updates starting...
+[12-Aug-2026 13:30:15 UTC]   Automatic plugin updates complete.
+[12-Aug-2026 13:30:16 UTC] Automatic updates complete.
+[12-Aug-2026 13:31:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:31:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:31:33 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:35:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:35:33 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 2
+[12-Aug-2026 13:35:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:35:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:33 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php:121
+Stack trace:
+#0 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(61): require_once()
+#1 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(33): render_jonasalexander_template('communitylink_b...')
+#2 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(434): {closure:/Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php:32}(Array, '', 'communitylink_b...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(commun...', 'do_shortcode_ta...', '[communitylink_...')
+#5 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): do_shortcode('[communitylink_...')
+#6 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(205): WP_Hook->apply_filters('[communitylink_...', Array)
+#7 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(656): apply_filters('the_content', '<!-- wp:shortco...')
+#8 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(460): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#10 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#11 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#12 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#13 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api.php(467): WP_REST_Server->serve_request('/wp/v2/pages/33...')
+#14 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#15 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#16 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(570): WP_Hook->do_action(Array)
+#17 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#18 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(821): WP->parse_request('')
+#19 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/functions.php(1343): WP->main('')
+#20 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-blog-header.php(16): wp()
+#21 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/index.php(17): require('/Users/jas/Docu...')
+#22 {main}
+  thrown in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 121
+[12-Aug-2026 13:35:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:35:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:35:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:35:38 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:35:38 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:38:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:38:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:38:33 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 2
+[12-Aug-2026 13:38:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:38:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:38:33 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:38:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php:121
+Stack trace:
+#0 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(61): require_once()
+#1 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(33): render_jonasalexander_template('communitylink_b...')
+#2 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(434): {closure:/Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php:32}(Array, '', 'communitylink_b...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(commun...', 'do_shortcode_ta...', '[communitylink_...')
+#5 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): do_shortcode('[communitylink_...')
+#6 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(205): WP_Hook->apply_filters('[communitylink_...', Array)
+#7 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(656): apply_filters('the_content', '<!-- wp:shortco...')
+#8 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(460): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#10 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#11 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#12 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#13 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api.php(467): WP_REST_Server->serve_request('/wp/v2/pages/33...')
+#14 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#15 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#16 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(570): WP_Hook->do_action(Array)
+#17 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#18 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(821): WP->parse_request('')
+#19 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/functions.php(1343): WP->main('')
+#20 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-blog-header.php(16): wp()
+#21 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/index.php(17): require('/Users/jas/Docu...')
+#22 {main}
+  thrown in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 121
+[12-Aug-2026 13:38:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:38:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:38:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:38:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:38:38 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:38:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:38:38 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:38:38 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:40:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:40:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:40:33 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 2
+[12-Aug-2026 13:40:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:40:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:40:33 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:40:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php:121
+Stack trace:
+#0 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(61): require_once()
+#1 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(33): render_jonasalexander_template('communitylink_b...')
+#2 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(434): {closure:/Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php:32}(Array, '', 'communitylink_b...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(commun...', 'do_shortcode_ta...', '[communitylink_...')
+#5 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): do_shortcode('[communitylink_...')
+#6 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(205): WP_Hook->apply_filters('[communitylink_...', Array)
+#7 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(656): apply_filters('the_content', '<!-- wp:shortco...')
+#8 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(460): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#10 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#11 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#12 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#13 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api.php(467): WP_REST_Server->serve_request('/wp/v2/pages/33...')
+#14 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#15 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#16 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(570): WP_Hook->do_action(Array)
+#17 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#18 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(821): WP->parse_request('')
+#19 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/functions.php(1343): WP->main('')
+#20 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-blog-header.php(16): wp()
+#21 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/index.php(17): require('/Users/jas/Docu...')
+#22 {main}
+  thrown in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 121
+[12-Aug-2026 13:40:59 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:40:59 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:40:59 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:40:59 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:40:59 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:40:59 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:40:59 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:40:59 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:42:30 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:42:30 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:42:30 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:42:30 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:42:30 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:42:30 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:44:33 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:44:33 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 2
+[12-Aug-2026 13:44:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:44:33 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:33 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:33 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php:121
+Stack trace:
+#0 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(61): require_once()
+#1 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(33): render_jonasalexander_template('communitylink_b...')
+#2 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(434): {closure:/Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php:32}(Array, '', 'communitylink_b...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(commun...', 'do_shortcode_ta...', '[communitylink_...')
+#5 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): do_shortcode('[communitylink_...')
+#6 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(205): WP_Hook->apply_filters('[communitylink_...', Array)
+#7 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(656): apply_filters('the_content', '<!-- wp:shortco...')
+#8 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(460): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#10 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#11 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#12 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#13 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api.php(467): WP_REST_Server->serve_request('/wp/v2/pages/33...')
+#14 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#15 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#16 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(570): WP_Hook->do_action(Array)
+#17 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#18 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(821): WP->parse_request('')
+#19 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/functions.php(1343): WP->main('')
+#20 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-blog-header.php(16): wp()
+#21 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/index.php(17): require('/Users/jas/Docu...')
+#22 {main}
+  thrown in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 121
+[12-Aug-2026 13:44:51 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:44:51 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:51 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:52 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:44:52 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:52 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:44:52 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:44:52 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:45:05 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:45:05 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:45:05 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:45:05 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:45:05 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:45:05 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:34 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:46:34 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:46:34 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 2
+[12-Aug-2026 13:46:34 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:46:34 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:34 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:34 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php:121
+Stack trace:
+#0 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(61): require_once()
+#1 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php(33): render_jonasalexander_template('communitylink_b...')
+#2 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(434): {closure:/Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php:32}(Array, '', 'communitylink_b...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(commun...', 'do_shortcode_ta...', '[communitylink_...')
+#5 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): do_shortcode('[communitylink_...')
+#6 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(205): WP_Hook->apply_filters('[communitylink_...', Array)
+#7 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(656): apply_filters('the_content', '<!-- wp:shortco...')
+#8 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(460): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#10 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#11 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#12 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#13 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/rest-api.php(467): WP_REST_Server->serve_request('/wp/v2/pages/33...')
+#14 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#15 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#16 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/plugin.php(570): WP_Hook->do_action(Array)
+#17 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#18 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/class-wp.php(821): WP->parse_request('')
+#19 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-includes/functions.php(1343): WP->main('')
+#20 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-blog-header.php(16): wp()
+#21 /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/index.php(17): require('/Users/jas/Docu...')
+#22 {main}
+  thrown in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 121
+[12-Aug-2026 13:46:37 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:46:37 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:37 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:37 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:46:37 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:37 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:37 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:46:37 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
+[12-Aug-2026 13:46:39 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:46:39 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:39 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:46:39 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:46:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:47:48 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:47:48 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:47:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:47:48 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:47:48 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:47:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:11 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:50:11 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:11 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:50:11 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:15 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 8
+[12-Aug-2026 13:50:15 UTC] PHP Warning:  Undefined variable $galleryAlbums in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/project_template.php on line 60
+[12-Aug-2026 13:50:15 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 49
+[12-Aug-2026 13:50:15 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /Users/jas/Documents/Arbejde/Jobsøgende/jonas-alexander.dk/wordpress/wp-content/plugins/jonas-alexander/jonas-alexander.php on line 52
