@@ -19,8 +19,10 @@ jobs:
 
       - name: Install Scaleway CLI
         run: |
-          curl -s https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | sh
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+          curl -fsSL https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.local/bin:$PATH"
+          scw --version
 
       - name: Log in to Scaleway Container Registry
         run: |
@@ -44,6 +46,7 @@ jobs:
 
       - name: Update Scaleway Serverless Container
         run: |
+          export PATH="$HOME/.local/bin:$PATH"
           scw container container update \
             container-id=${{ env.CONTAINER_ID }} \
             image=${{ env.IMAGE }} \
