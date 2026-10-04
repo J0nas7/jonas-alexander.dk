@@ -19,8 +19,13 @@ jobs:
 
       - name: Install Scaleway CLI
         run: |
-          curl -s https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | sh
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/scaleway/scaleway-cli/main/scripts/get.sh \
+            --output /tmp/install-scaleway-cli.sh
+          sh /tmp/install-scaleway-cli.sh
+          echo "/usr/local/bin" >> "$GITHUB_PATH"
+          command -v scw
+          scw version
 
       - name: Log in to Scaleway Container Registry
         run: |
@@ -46,7 +51,9 @@ jobs:
         run: |
           scw container container update \
             container-id=${{ env.CONTAINER_ID }} \
-            image=${{ env.IMAGE }}
+            image=${{ env.IMAGE }} \
+            min-scale=0 \
+            max-scale=1
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
