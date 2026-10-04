@@ -14,7 +14,11 @@ docker tag my-wordpress-sqlite $IMAGE
 # Push the image to the registry
 docker push $IMAGE
 
- # Update the Scaleway container with the new image
-scw container container update $CONTAINER_ID registry-image=$IMAGE
+# Update the Scaleway container with the new image and enforce scale-to-zero
+scw container container update \
+  container-id=$CONTAINER_ID \
+  image=$IMAGE \
+  min-scale=0 \
+  max-scale=1
 
 echo "WordPress image built, pushed, and container updated with tag: $TIMESTAMP"
