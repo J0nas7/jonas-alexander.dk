@@ -19,32 +19,8 @@ jobs:
 
       - name: Install Scaleway CLI
         run: |
-          set -eux
-          ARCH="$(uname -m)"
-          case "$ARCH" in
-            x86_64) SCW_ARCH="amd64" ;;
-            aarch64|arm64) SCW_ARCH="arm64" ;;
-            *) echo "Unsupported architecture: $ARCH" >&2; exit 1 ;;
-          esac
-
-          curl -fsSL https://api.github.com/repos/scaleway/scaleway-cli/releases/latest -o /tmp/scw-release.json
-          ASSET_URL=$(python3 - <<'PY'
-import json
-with open('/tmp/scw-release.json') as f:
-    data = json.load(f)
-for asset in data.get('assets', []):
-    name = asset.get('name', '')
-    if name.startswith('scw-linux-') and ('amd64' in name or 'x86_64' in name or 'arm64' in name):
-        print(asset.get('browser_download_url'))
-        break
-else:
-    raise SystemExit('No matching Scaleway CLI asset found for linux')
-PY
-          )
-
-          curl -fsSL "$ASSET_URL" -o /tmp/scw
-          sudo install -m 0755 /tmp/scw /usr/local/bin/scw
-          scw --version
+          curl -s https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | sh
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Log in to Scaleway Container Registry
         run: |
@@ -70,9 +46,7 @@ PY
         run: |
           scw container container update \
             container-id=${{ env.CONTAINER_ID }} \
-            image=${{ env.IMAGE }} \
-            min-scale=0 \
-            max-scale=1
+            image=${{ env.IMAGE }}
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
