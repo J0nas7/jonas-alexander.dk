@@ -19,9 +19,15 @@ jobs:
 
       - name: Install Scaleway CLI
         run: |
-          curl -fsSL https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | bash
-          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
-          export PATH="$HOME/.local/bin:$PATH"
+          set -eux
+          ARCH="$(uname -m)"
+          case "$ARCH" in
+            x86_64) SCW_ARCH="amd64" ;;
+            aarch64|arm64) SCW_ARCH="arm64" ;;
+            *) echo "Unsupported architecture: $ARCH" >&2; exit 1 ;;
+          esac
+          curl -fsSL "https://github.com/scaleway/scaleway-cli/releases/latest/download/scw-linux-${SCW_ARCH}" -o /tmp/scw
+          sudo install -m 0755 /tmp/scw /usr/local/bin/scw
           scw --version
 
       - name: Log in to Scaleway Container Registry
@@ -46,7 +52,6 @@ jobs:
 
       - name: Update Scaleway Serverless Container
         run: |
-          export PATH="$HOME/.local/bin:$PATH"
           scw container container update \
             container-id=${{ env.CONTAINER_ID }} \
             image=${{ env.IMAGE }} \
