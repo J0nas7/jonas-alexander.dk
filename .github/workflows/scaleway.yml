@@ -26,7 +26,23 @@ jobs:
             aarch64|arm64) SCW_ARCH="arm64" ;;
             *) echo "Unsupported architecture: $ARCH" >&2; exit 1 ;;
           esac
-          curl -fsSL "https://github.com/scaleway/scaleway-cli/releases/latest/download/scw-linux-${SCW_ARCH}" -o /tmp/scw
+
+          curl -fsSL https://api.github.com/repos/scaleway/scaleway-cli/releases/latest -o /tmp/scw-release.json
+          ASSET_URL=$(python3 - <<'PY'
+import json
+with open('/tmp/scw-release.json') as f:
+    data = json.load(f)
+for asset in data.get('assets', []):
+    name = asset.get('name', '')
+    if name.startswith('scw-linux-') and ('amd64' in name or 'x86_64' in name or 'arm64' in name):
+        print(asset.get('browser_download_url'))
+        break
+else:
+    raise SystemExit('No matching Scaleway CLI asset found for linux')
+PY
+          )
+
+          curl -fsSL "$ASSET_URL" -o /tmp/scw
           sudo install -m 0755 /tmp/scw /usr/local/bin/scw
           scw --version
 
